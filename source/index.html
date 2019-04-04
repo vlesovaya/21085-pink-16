@@ -6,26 +6,26 @@
 </head>
 <body>
 <header class="page-header">
-    <a class="page-header__logo" href="#">
-      <p class="page-header__logo-text">Pink</p>
-    </a>
+  <a class="page-header__logo" href="#">
+    <p class="page-header__logo-text">Pink</p>
+  </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
-    <ul class="main-nav__list site-list">
-      <li class="site-list_item site-list_item--active">
-        <a>Главная</a>
-      </li>
-      <li class="site-list_item">
-        <a href="photo.html">Фотографии</a>
-      </li>
-      <li class="site-list_item">
-        <a href="#">Фотографии</a>
-      </li>
-      <li class="site-list_item">
-        <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
-      </li>
-    </ul>
+      <ul class="main-nav__list site-list">
+        <li class="site-list_item site-list_item--active">
+          <a>Главная</a>
+        </li>
+        <li class="site-list_item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-list_item">
+          <a href="#">Фотографии</a>
+        </li>
+        <li class="site-list_item">
+          <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+        </li>
+      </ul>
     </div>
   </nav>
 </header>
@@ -50,33 +50,76 @@
   </section>
 
   <section class="advantages">
-    <h2 class="visually-hidden">Преимущества нашего приложения</h2>
-    <div class="advantages__promo">
-      <span class="promo__text question">Устали от серости мегаполиса?</span>
-      <span class="promo__text answer">Нам есть, что вам  предложить!</span>
+    <div class="advantages__wrapper">
+      <h2 class="visually-hidden">Преимущества нашего приложения</h2>
+      <div class="advantages__promo">
+        <span class="promo__text question">Устали от серости мегаполиса?</span>
+        <span class="promo__text answer">Нам есть, что вам  предложить!</span>
+      </div>
+      <ul class="advantages__list">
+        <li class="advantages-item">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            несколько кликов!</p>
+        </li>
+        <li class="advantages-item">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages-description">Сделайте снимок и украсьте его смайликом или текстовой подписью чтобы
+            усилить эффект</p>
+        </li>
+        <li class="advantages-item">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+            новых</p>
+        </li>
+      </ul>
     </div>
-    <ul class="advantages__list">
-      <li class="advantages-item">
-        <h3 class="advantages__title">Поднимает настроение</h3>
-        <p class="advantages-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-      </li>
-      <li class="advantages-item">
-        <h3 class="advantages__title">Меняет мир вокруг</h3>
-        <p class="advantages-description">Сделайте снимок и украсьте его смайликом или текстовой подписью чтобы усилить эффект</p>
-      </li>
-      <li class="advantages-item">
-        <h3 class="advantages__title">Заводит новых друзей</h3>
-        <p class="advantages-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-      </li>
-    </ul>
   </section>
   <section class="reviews">
-    <h2 class="visually-hidden">Отзывы о нас</h2>
-    <div class="reviews__list">
-      <blockquote class="reviews__item">
-      <h3 class="reviews__author-name">Николай Петров</h3>
-      <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-      </blockquote>
+    <div class="reviews__wrapper slider">
+      <h2 class="visually-hidden">Отзывы о нас</h2>
+      <div class="reviews__list slider-list">
+        <blockquote class="reviews__item slider-item">
+          <h3 class="reviews__author-name">Николай Петров</h3>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+            серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </blockquote>
+      </div>
+      <p class="advantages__toggles slider__toggles">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
+    </div>
+  </section>
+  <section class="price">
+    <div class="price__wrapper slider">
+      <h2 class="visually-hidden">Наши цены</h2>
+      <div class="price__wrapper slider">
+        <table class="price__list slider-list">
+          <div class="flag flag-hit">Хит</div>
+          <tr>
+            <th class="price__title price__title--rate">Стандарт</th>
+          </tr>
+          <tr>
+            <th class="price__title price__title--amount">3,99 USD</th>
+          </tr>
+          <tr>
+            <td class="price__field">Розовый фильтр</td>
+          </tr>
+          <tr>
+            <td class="price__field">Смайлики</td>
+          </tr>
+          <tr>
+            <td class="price__field">Комментарии</td>
+          </tr>
+        </table>
+      </div>
+      <p class="advantages__toggles slider__toggles">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
     </div>
   </section>
 
