@@ -31,6 +31,84 @@
 </header>
 <main class="page-main">
   <h1 class="visually-hidden">Конкурс на самое безбашенное путешествие с Пинк</h1>
+  <p class="conditions">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную
+    карту! Пожалуйста, заполните форму ниже:</p>
+  <section class="contest-form form">
+    <h2 class="visually-hidden">Заполните форму</h2>
+    <form class="form__body" action="https://echo.htmlacademy.ru" method="get">
+      <fieldset class="personal-information">
+        <label class="surname">Фамилия:</label>
+        <input id="user-surname" type="text" name="name" value="" placeholder="Укажите фамилию *">
+        <label class="name">Имя:</label>
+        <input id="user-name" type="text" name="name" value="" placeholder="Введите ваше имя *">
+        <label class="patronymic">Отчество:</label>
+        <input id="user-patronymic" type="text" name="name" value="" placeholder="Ну и отчество тоже">
+      </fieldset>
+      <fieldset class="achievements">
+        <legend class="achievements__legend">Ваши безбашенные достижения в путешествии</legend>
+        <p class="achievements__filter filter">
+          <input class="filter__input filter__input--checkbox" type="checkbox" name="achievement"
+                 value="selfie" id="selfie" checked>
+          <label for="selfie">Сделал селфи с акулой</label>
+        </p>
+        <p class="achievements__filter">
+          <input class="filter__input filter__input--checkbox" type="checkbox" name="achievement"
+                 value="beach" id="beach" checked>
+          <label for="beach">Обгорел на пляже</label>
+        </p>
+        <p class="achievements__filter">
+          <input class="filter__input" type="checkbox" name="achievement"
+                 value="saw" id="saw">
+          <label for="saw">Видел Чака Норриса</label>
+        </p>
+        <p class="achievements__filter">
+          <input class="filter__input" type="checkbox" name="achievement"
+                 value="bought" id="bought">
+          <label for="bought">Накупил сувениров</label>
+        </p>
+        <p class="achievements__filter">
+          <input class="filter__input filter__input--checkbox" type="checkbox" name="achievement"
+                 value="kept" id="kept" checked>
+          <label for="kept">Удержал башню</label>
+        </p>
+        <p class="achievements__filter">
+          <input class="filter__input" type="checkbox" name="achievement"
+                 value="сrushed" id="сrushed">
+          <label for="сrushed">Разгромил отель</label>
+        </p>
+      </fieldset>
+      <fieldset class="contacts">
+        <label class="phone">Номер телефона</label>
+        <input id="user-phone" type="tel" name="tel" value="" placeholder="Номер, пожалуйста">
+        <label class="phone">Адрес почты</label>
+        <input id="user-email" type="email" name="email" value="" placeholder="Введите почту *">
+      </fieldset>
+      <fieldset class="travel-app">
+        <legend class="travel-app__legend">С каким приложением путешествовали?</legend>
+        <p class="travel-app__filter">
+          <input class="filter-input" type="radio" name="app" value="ios" id="ios" checked>
+          <label for="ios">Pink для iOS</label>
+        </p>
+        <p class="travel-app__filter">
+          <input class="filter-input" type="radio" name="app" value="android" id="android">
+          <label for="android">Pink на Android</label>
+        </p>
+        <p class="travel-app__filter">
+          <input class="filter-input" type="radio" name="app" value="windows" id="windows">
+          <label for="windows">Windows Phone</label>
+        </p>
+      </fieldset>
+      <fieldset class="emotions">
+        <p>
+          <label for="emotions__letter">Опишите свои эмоции</label>
+          <textarea id="emotions__letter" name="text" rows="10" cols="30"
+                    placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        </p>
+      </fieldset>
+      <button type="submit" class="show">Отправить форму</button>
+    </form>
+    <span class="form-note">* — обязательные поля</span>
+  </section>
 </main>
 <footer class="page-footer">
   <div class="page-footer__wrapper">
