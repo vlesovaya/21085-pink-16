@@ -7,7 +7,7 @@
 <body>
 <header class="page-header">
   <a class="page-header__logo" href="#">
-    <p class="page-header__logo-text">Pink</p>
+    <svg class="page-header__logo-text" width="75" height="22">Pink</svg>
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -20,7 +20,7 @@
           <a href="photo.html">Фотографии</a>
         </li>
         <li class="site-list_item">
-          <a href="#">Фотографии</a>
+          <a href="#">Конкурс</a>
         </li>
         <li class="site-list_item">
           <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
@@ -33,6 +33,7 @@
   <h1 class="visually-hidden">Мобильное приложение Pink</h1>
   <section class="app">
     <h2 class="visually-hidden">Скачать приложение</h2>
+    <img class="app__image" src="#" alt="Изображение приложения" width="320" height="314">
     <a class="app__download-link" href="#">Скачать приложение</a>
     <ul class="app__app-logo">
       <li class="app-logo_icon">
@@ -71,17 +72,18 @@
             новых</p>
         </li>
       </ul>
+      <img class="advantages__image" src="#" alt="Изображение приложения" width="157" height="320">
     </div>
   </section>
   <section class="reviews">
     <div class="reviews__wrapper slider">
       <h2 class="visually-hidden">Отзывы о нас</h2>
       <div class="reviews__list slider-list">
-        <blockquote class="reviews__item slider-item">
-          <h3 class="reviews__author-name">Николай Петров</h3>
+        <div class="reviews__item slider-item">
+          <b class="reviews__author-name">Николай Петров</b>
           <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-        </blockquote>
+        </div>
       </div>
       <p class="advantages__toggles slider__toggles">
         <button class="slider__toggle" type="button">1</button>
@@ -93,55 +95,50 @@
   <section class="price">
     <div class="price__wrapper slider">
       <h2 class="visually-hidden">Наши цены</h2>
-      <div class="price__wrapper slider">
-        <div class="flag flag-hit">Хит</div>
-        <table class="price__list slider-list">
-          <tr>
-            <th class="price__title price__title--rate">Стандарт</th>
-          </tr>
-          <tr>
-            <th class="price__title price__title--amount">3,99 USD</th>
-          </tr>
-          <tr>
-            <td class="price__field">Розовый фильтр</td>
-          </tr>
-          <tr>
-            <td class="price__field">Смайлики</td>
-          </tr>
-          <tr>
-            <td class="price__field">Комментарии</td>
-          </tr>
-        </table>
-      </div>
-      <p class="advantages__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
-      </p>
+      <div class="flag flag-hit">Хит</div>
+      <table class="price__list slider-list">
+        <tr class="price__list row--top">
+          <th class="price__title price__title--rate">Стандарт
+            <span class="price__title price__title--amount">3,99 USD</span>
+          </th>
+        <tr>
+          <td class="price__field">Розовый фильтр</td>
+        </tr>
+        <tr>
+          <td class="price__field">Смайлики</td>
+        </tr>
+        <tr>
+          <td class="price__field">Комментарии</td>
+        </tr>
+      </table>
+    </div>
+    <div class="advantages__toggles slider__toggles">
+      <button class="slider__toggle" type="button">1</button>
+      <button class="slider__toggle" type="button">2</button>
+      <button class="slider__toggle" type="button">3</button>
+    </div>
     </div>
   </section>
 </main>
-<footer class="page-footer">
-  <div class="page-footer__wrapper">
-    <section class="page-footer__contacts contacts">
-      <h2 class="visually-hidden">Наши контакты</h2>
-      <span class="contacts__questions">Остались вопросы? Свяжитесь с нами!</span>
-      <ul class="contacts__list">
-        <li class="contacts-item">
-          <h3 class="contacts__title">Звоните:</h3>
-          <span class="contacts__item">+7 (812) 555-66-66</span>
-        </li>
-        <li class="contacts-item">
-          <h3 class="contacts__title">Пишите:</h3>
-          <span class="contacts__item">mail@htmlacademy.ru</span>
-        </li>
-        <li class="contacts-item">
-          <h3 class="contacts__title">Приезжайте в гости:</h3>
-          <span class="contacts__item">ул. Большая Конюшенная, 19/8 </span>
-        </li>
-      </ul>
-    </section>
+<section class="contacts">
+  <div class="contacts__wrapper">
+    <h2 class="visually-hidden">Наши контакты</h2>
+    <span class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</span>
+    <ul class="contacts__list">
+      <li class="contacts-item">
+        <p class="contacts__title">Звоните:</p>
+        <span class="contacts__item">+7 (812) 555-66-66</span>
+      </li>
+      <li class="contacts-item">
+        <p class="contacts__title">Пишите:</p>
+        <span class="contacts__item">mail@htmlacademy.ru</span>
+      </li>
+      <li class="contacts-item">
+        <p class="contacts__title">Приезжайте в гости:</p>
+        <span class="contacts__item">ул. Большая Конюшенная, 19/8</span>
+      </li>
+    </ul>
   </div>
-</footer>
+</section>
 </body>
 </html>
