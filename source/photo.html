@@ -130,20 +130,22 @@
       <p class="slogan-text">Затмите их всех!</p>
       <p class="slogan-text">Выкладывайте все, что накопилось в телефоне!</p>
     </div>
-    <div class="upload__image-editing">
-      <img src="#" alt="Загружаемое фото" width="280" height="374">
-      <button class="crop" type="button">Обрезка</button>
-      <button class="fill" type="button">Заливка</button>
-      <button class="contrast" type="button">Контраст</button>
-      <div class="upload__range-controls range-controls">
-        <div class="range-controls__scale">
-          <div class="range-controls__bar"></div>
+    <form class="upload__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="upload__image-editing">
+        <img src="#" alt="Загружаемое фото" width="280" height="374">
+        <button class="crop" type="button">Обрезка</button>
+        <button class="fill" type="button">Заливка</button>
+        <button class="contrast" type="button">Контраст</button>
+        <div class="upload__range-controls range-controls">
+          <div class="range-controls__scale">
+            <div class="range-controls__bar"></div>
+          </div>
+          <div class="range-controls__toggle"></div>
         </div>
-        <div class="range-controls__toggle"></div>
+        <input class="upload__button upload__button--submit" type="submit" value="Запостить">
+        <input class="upload__button upload__button--reset" type="reset" value="Отмена">
       </div>
-      <button class="upload_post" type="button">Запостить</button>
-      <button class="upload_cancel" type="button">Отмена</button>
-    </div>
+    </form>
   </section>
 </main>
 <footer class="page-footer">
@@ -165,10 +167,11 @@
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано</p>
-      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg class="copyright__image" width="27" height="34"></svg>
-      </a>
+      <p class="copyright__text">Разработано
+        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="copyright__image" width="27" height="34"></svg>
+        </a>
+      </p>
     </div>
   </div>
 </footer>
