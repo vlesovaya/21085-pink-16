@@ -1,12 +1,149 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
-
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Пинк</title>
+</head>
+<body>
+<header class="page-header">
+  <a class="page-header__logo" href="#">
+    <svg class="page-header__logo-text" width="75" height="22"></svg>
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list_item site-list_item--active">
+          <a>Главная</a>
+        </li>
+        <li class="site-list_item">
+          <a href="photo.html">Фотографии</a>
+        </li>
+        <li class="site-list_item">
+          <a href="form.html">Конкурс</a>
+        </li>
+        <li class="site-list_item">
+          <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main class="page-main">
+  <h1 class="visually-hidden">Мобильное приложение Pink</h1>
+  <section class="app">
+    <div class="app__wrapper">
+      <h2 class="visually-hidden">Скачать приложение</h2>
+      <img class="app__image" src="#" alt="Изображение приложения" width="320" height="314">
+      <a class="app__download-link" href="https://itunes.apple.com/">Скачать приложение</a>
+      <ul class="app__app-logo">
+        <li class="app-logo_icon">
+          <img src="https://itunes.apple.com/" alt="ios">
+        </li>
+        <li class="app-logo_icon">
+          <img src="https://play.google.com/store?hl=ru" alt="android">
+        </li>
+        <li class="app-logo_icon">
+          <img src="https://www.microsoft.com/ru-ru/store/apps/windows-phone" alt="windows">
+        </li>
+      </ul>
+      <p class="app__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="advantages__wrapper">
+      <h2 class="visually-hidden">Преимущества нашего приложения</h2>
+      <div class="advantages__promo">
+        <span class="promo__text question">Устали от серости мегаполиса?</span>
+        <span class="promo__text answer">Нам есть, что вам  предложить!</span>
+      </div>
+      <ul class="advantages__list">
+        <li class="advantages-item">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
+            несколько кликов!</p>
+        </li>
+        <li class="advantages-item">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages-description">Сделайте снимок и украсьте его смайликом или текстовой подписью чтобы
+            усилить эффект</p>
+        </li>
+        <li class="advantages-item">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
+            новых</p>
+          <img class="advantages__image" src="#" alt="Изображение приложения" width="157" height="320">
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="reviews__wrapper slider">
+      <h2 class="visually-hidden">Отзывы о нас</h2>
+      <div class="reviews__list slider-list">
+        <div class="reviews__item slider-item">
+          <b class="reviews__author-name">Николай Петров</b>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные
+            серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+      </div>
+      <div class="advantages__toggles slider__toggles">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </div>
+    </div>
+  </section>
+  <section class="price">
+    <div class="price__wrapper slider">
+      <h2 class="visually-hidden">Наши цены</h2>
+      <div class="flag flag-hit">Хит</div>
+      <table class="price__list slider-list">
+        <tr class="price__list row--top">
+          <th class="price__title price__title--rate">Стандарт
+            <span class="price__title price__title--amount">3,99 USD</span>
+          </th>
+        <tr>
+          <td class="price__field">Розовый фильтр</td>
+        </tr>
+        <tr>
+          <td class="price__field">Смайлики</td>
+        </tr>
+        <tr>
+          <td class="price__field">Комментарии</td>
+        </tr>
+      </table>
+    </div>
+    <div class="advantages__toggles slider__toggles">
+      <button class="slider__toggle" type="button">1</button>
+      <button class="slider__toggle" type="button">2</button>
+      <button class="slider__toggle" type="button">3</button>
+    </div>
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="contacts__wrapper">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <span class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</span>
+      <ul class="contacts__list">
+        <li class="contacts-item">
+          <p class="contacts__title">Звоните:
+            <span class="contacts__item">+7 (812) 555-66-66</span>
+          </p>
+        </li>
+        <li class="contacts-item">
+          <p class="contacts__title">Пишите:
+            <span class="contacts__item">mail@htmlacademy.ru</span>
+          </p>
+        </li>
+        <li class="contacts-item">
+          <p class="contacts__title">Приезжайте в гости:
+            <span class="contacts__item">ул. Большая Конюшенная, 19/8</span>
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+</main>
+</body>
 </html>
