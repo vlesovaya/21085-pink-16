@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <header class="page-header">
@@ -14,16 +15,16 @@
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
         <li class="site-list_item site-list_item--active">
-          <a>Главная</a>
+          <a class="site-list__link">Главная</a>
         </li>
         <li class="site-list_item">
-          <a href="photo.html">Фотографии</a>
+          <a class="site-list__link" href="photo.html">Фотографии</a>
         </li>
         <li class="site-list_item">
-          <a href="form.html">Конкурс</a>
+          <a class="site-list__link" href="form.html">Конкурс</a>
         </li>
         <li class="site-list_item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+          <a  class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
         </li>
       </ul>
     </div>
@@ -34,17 +35,17 @@
   <section class="app">
     <div class="app__wrapper">
       <h2 class="visually-hidden">Скачать приложение</h2>
-      <img class="app__image" src="#" alt="Изображение приложения" width="320" height="314">
+      <img class="app__image" src="./img/iphone-hand-mobile@1x.png" alt="Изображение приложения" width="320" height="314">
       <a class="app__download-link" href="https://itunes.apple.com/">Скачать приложение</a>
       <ul class="app__app-logo">
         <li class="app-logo_icon">
-          <img src="https://itunes.apple.com/" alt="ios">
+          <a class="app-logo_icon--apple" href="https://itunes.apple.com/"></a>
         </li>
         <li class="app-logo_icon">
-          <img src="https://play.google.com/store?hl=ru" alt="android">
+          <a class="app-logo_icon--android" href="https://play.google.com/store?hl=ru"></a>
         </li>
         <li class="app-logo_icon">
-          <img src="https://www.microsoft.com/ru-ru/store/apps/windows-phone" alt="windows">
+          <a class="app-logo_icon--microsoft" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone"></a>
         </li>
       </ul>
       <p class="app__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -72,7 +73,7 @@
           <h3 class="advantages__title">Заводит новых друзей</h3>
           <p class="advantages-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
             новых</p>
-          <img class="advantages__image" src="#" alt="Изображение приложения" width="157" height="320">
+          <img class="advantages__image" src="./img/iphone-screen-mobile@1x.png" alt="Изображение приложения" width="157" height="320">
         </li>
       </ul>
     </div>
@@ -87,7 +88,7 @@
             серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
       </div>
-      <div class="advantages__toggles slider__toggles">
+      <div class="reviews__toggles slider__toggles">
         <button class="slider__toggle" type="button">1</button>
         <button class="slider__toggle" type="button">2</button>
         <button class="slider__toggle" type="button">3</button>
