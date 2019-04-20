@@ -1,28 +1,33 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
   background-color: @bg-blue;
 }
 
 .page-header__logo {
-  width: 150px;
-  height: 69px;
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid @nav-color-dark;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
-    height: 109px;
+    padding-top: 27px;
+    padding-bottom: 42px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header {
     flex-direction: row;
-    width: auto;
-    margin: 0;
+  }
 
-    .page-header__logo {
-      height: 110px;
-    }
+  .page-header__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-header__logo {
+    display: block;
+    margin: 15px 173px 0 20px;
   }
 }
