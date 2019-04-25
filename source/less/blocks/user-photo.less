@@ -1,6 +1,20 @@
 .user-photo {
-  margin-top: 25px;
-  margin-bottom: 28px;
+  display: block;
+  width: 280px;
+  margin: 20px auto 0;
+  //margin-top: 20px;
+}
+
+.user-photo--image-day {
+  width: 320px;
+  height: auto;
+  margin: 0 -20px;
+}
+
+.user-photo__caption {
+  width: 280px;
+  margin-top: -10px;
+  background-color: @bg-gray;
 }
 
 .user-photo__author-name {
@@ -22,4 +36,61 @@
   color: @red;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .user-photo {
+    width: 300px;
+    margin: 0 0 20px 0;
+  }
+
+  .user-photo--top {
+    margin: 0 auto;
+    width: 660px;
+  }
+
+  .user-photo--image-day {
+    width: 660px;
+    height: auto;
+    margin: auto;
+  }
+
+  .user-photo__image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .user-photo__caption {
+    width: 300px;
+    margin-top: -10px;
+  }
+
+  .user-photo__caption--image-day {
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  .user-photo__like {
+    order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-photo--top {
+    width: 1200px;
+  }
+
+  .user-photo--image-day {
+    width: 1200px;
+  }
+
+  .user-photo__caption {
+    order: 2;
+  }
+
+  .user-photo__caption--image-day {
+    width: 940px;
+  }
 }

@@ -12,7 +12,12 @@
 <header class="page-header">
   <div class="page-header__container container">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22">
+      <picture>
+        <source media="(min-width: 1200px" ) srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 660px" ) srcset="img/logo-pink-white-tablet.svg">
+        <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22"
+             alt="Наш логотип">
+      </picture>
     </a>
     <nav class="main-nav">
       <!--<button class="main-nav__toggle" type="button">Открыть меню</button>-->
@@ -34,9 +39,9 @@
   </div>
 </header>
 <main class="page-main">
-  <div class="page-main__container container">
-    <h1 class="visually-hidden">Мобильное приложение Pink</h1>
-    <section class="app">
+  <h1 class="visually-hidden">Мобильное приложение Pink</h1>
+  <section class="app">
+    <div class="app__container container">
       <h2 class="visually-hidden">Скачать приложение</h2>
       <div class="app__image">
         <img class="app__image--hand" src="./img/iphone-hand-mobile@1x.png" alt="Изображение приложения" width="258"
@@ -58,8 +63,10 @@
         </ul>
         <p class="app__available">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
-    </section>
-    <section class="advantages">
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="advantages__container container">
       <h2 class="visually-hidden">Преимущества нашего приложения</h2>
       <div class="advantages__promo">
         <span class="advantages__promo--question">Устали от серости мегаполиса?</span>
@@ -84,8 +91,10 @@
                width="157" height="320">
         </li>
       </ul>
-    </section>
-    <section class="reviews">
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="reviews__container container">
       <h2 class="visually-hidden">Отзывы о нас</h2>
       <div class="reviews__list slider-list">
         <div class="reviews__item slider-item">
@@ -99,8 +108,10 @@
         <button class="slider__toggle" type="button">2</button>
         <button class="slider__toggle" type="button">3</button>
       </div>
-    </section>
-    <section class="price">
+    </div>
+  </section>
+  <section class="price">
+    <div class="price__container container">
       <h2 class="visually-hidden">Наши цены</h2>
       <div class="flag flag-hit">Хит</div>
       <table class="price__list slider-list">
@@ -123,8 +134,10 @@
         <button class="slider__toggle" type="button">2</button>
         <button class="slider__toggle" type="button">3</button>
       </div>
-    </section>
-    <section class="contacts">
+    </div>
+  </section>
+  <section class="contacts">
+    <div class="contacts__container container">
       <h2 class="visually-hidden">Наши контакты</h2>
       <span class="contacts__slogan">Остались вопросы? Свяжитесь с нами!</span>
       <ul class="contacts__list">
@@ -144,7 +157,8 @@
           </p>
         </li>
       </ul>
-    </section>
+    </div>
+  </section>
   </div>
 </main>
 </body>
