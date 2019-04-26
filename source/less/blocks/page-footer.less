@@ -16,12 +16,13 @@
 
 @media (min-width: @tablet-width) {
   .page-footer {
-    width: 660px;
+    width: 620px;
     margin: 36px auto 39px;
   }
 
-  .page-footer__wrapper {
+  .page-footer__container {
     display: flex;
+    justify-content: space-between;
   }
 
   .page-footer__logo {
@@ -40,5 +41,11 @@
 @media (min-width: @desktop-width) {
   .page-footer {
     width: 940px;
+  }
+
+  .page-footer__container {
+    margin-top: 100px;
+    margin-bottom: 85px;
+    padding: 0;
   }
 }

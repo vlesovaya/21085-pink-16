@@ -129,20 +129,31 @@
 
 @media (min-width: @desktop-width) {
   .app {
-    width: auto;
+    width: 100%;
+    min-height: 740px;
+    margin: 0;
+  }
+
+  .app__container {
+    padding: 0;
   }
 
   .app__image {
     background-image: url("./../img/bg-back-desktop@1x.jpg");
+    background-position: center;
     width: auto;
     height: 853px;
-    margin-top: -110px;
-    z-index: -1;
   }
 
   .app__image--hand {
     width: 556px;
     height: 645px;
-    left: 728px;
+    left: 650px;
+  }
+
+  .app__promo {
+    margin: 0 0 125px 135px;
+    left: 80px;
+    bottom: -70px;
   }
 }
