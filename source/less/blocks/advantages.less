@@ -1,14 +1,14 @@
 .advantages {
   width: auto;
-  background-color: @bg-gray;
+  //background-color: @bg-gray;
 }
 
 .advantages__promo {
   display: block;
-  margin-top: 45px;
-  margin-bottom: 30px;
+  width: 205px;
+  margin: 45px auto 30px;
   font-size: 24px;
-  line-height: 1;
+  line-height: 25px;
   font-weight: 300;
   text-align: center;
 }
@@ -20,14 +20,22 @@
 
 .advantages__list {
   padding: 0;
-  background-color: @bg-gray;
   list-style: none;
 }
 
 .advantages__item {
   display: block;
+  width: 255px;
   margin: 40px auto;
   text-align: center;
+}
+
+.advantages__item--bottom {
+  display: none;
+}
+
+.advantages__image--desktop {
+  display: none;
 }
 
 .advantages__title {
@@ -44,30 +52,34 @@
 
 @media (min-width: @tablet-width) {
   .advantages__promo {
-    width: 587px;
-    margin: 0 auto;
-    margin-top: 59px;
-    margin-bottom: 50px;
+    width: 620px;
+    margin: 59px auto 50px;
     font-size: 40px;
+    line-height: 45px;
   }
 
   .advantages__promo--question {
-    margin: 0;
+    margin: 0 auto;
   }
 
   .advantages__promo--answer {
-    margin: 0;
+    display: block;
+    width: 335px;
+    margin: 0 auto;
   }
 
   .advantages__list {
-    width: 306px;
+    width: 310px;
     height: 490px;
     margin: 0 auto;
     padding-left: 310px;
   }
 
   .advantages__item {
-    margin-bottom: 45px;
+    width: 308px;
+    margin: 0 0 45px 0;
+    //margin-bottom: 45px;
+    text-align: left;
   }
 
   .advantages__image {
