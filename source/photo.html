@@ -8,10 +8,14 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header class="page-header">
+<header class="page-header page-header--photo">
   <div class="page-header__container container">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22">
+      <picture>
+        <source media="(min-width:960px" ) srcset="img/logo-pink-white-desktop.svg">
+        <source media="(min-width: 660px" ) srcset="img/logo-pink-white-tablet.svg">
+        <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="Наш логотип">
+      </picture>
     </a>
     <nav class="main-nav">
       <!--<button class="main-nav__toggle" type="button">Открыть меню</button>-->
@@ -71,22 +75,22 @@
         <article class="user-photo">
           <img class="user-photo__image" src="./img/photo-drumset-mobile@1x.jpg" alt="Барабаны" width="280" height="180">
           <div class="user-photo__caption">
-            <b class="user-photo__author-name">Борис</b>
-            <span class="user-photo__post-time">(20 часов назад)</span>
-            <p class="user-photo__content">Здесь могла быть ваша цитата о высоком и вечном</p>
+            <b class="user-photo__author-name">Антон</b>
+            <span class="user-photo__post-time">(12 часов назад)</span>
+            <p class="user-photo__content">Соседи будут рады!</p>
             <a class="user-photo__like like" href="#">
-              <span class="like__text">Нравится: 215</span>
+              <span class="like__text">Нравится: 666</span>
             </a>
           </div>
         </article>
         <article class="user-photo">
           <img class="user-photo__image" src="./img/photo-window-mobile@1x.jpg" alt="Здание" width="280" height="180">
           <div class="user-photo__caption">
-            <b class="user-photo__author-name">Антон</b>
-            <span class="user-photo__post-time">(12 часов назад)</span>
-            <p class="user-photo__content">Соседи будут рады!</p>
+            <b class="user-photo__author-name">Борис</b>
+            <span class="user-photo__post-time">(20 часов назад)</span>
+            <p class="user-photo__content">Здесь могла быть ваша цитата о высоком и вечном</p>
             <a class="user-photo__like like" href="#">
-              <span class="like__text">Нравится: 666</span>
+              <span class="like__text">Нравится: 215</span>
             </a>
           </div>
         </article>
