@@ -2,10 +2,6 @@
   background-color: @bg-blue;
 }
 
-//.page-header--photo {
-//  background-image: url("./../img/bg-back-desktop@1x.jpg");
-//}
-
 .page-header__logo {
   display: block;
   margin: 0 -20px;
@@ -24,8 +20,8 @@
   }
 
   .page-header__logo {
-    padding-top: 27px;
-    padding-bottom: 42px;
+    padding-top: 24px;
+    padding-bottom: 39px;
   }
 
   .page-header__logo-image {
@@ -37,12 +33,24 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    min-width: 320px;
+    top: 0;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 4;
+  }
+
+  .main-nav__list {
+    position: absolute;
   }
 
   .page-header__container {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
   }
 
   .page-header__logo {
