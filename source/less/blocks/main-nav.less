@@ -2,8 +2,69 @@
   background-color: @bg-blue;
 }
 
+//.main-nav__toggle {
+//  display: none;
+//}
+
 .main-nav__toggle {
-  display: none;
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  z-index: 2;
+
+  display: block;
+  width: 50px;
+  height: 24px;
+
+  background-color: @blue;
+
+  cursor: pointer;
+  border: none;
+}
+
+
+.page-header__container--closed .main-nav__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 50px;
+  height: 4px;
+
+  background-color: #ffffff;
+  box-shadow: 0 10px 0 0 #ffffff, 0 20px 0 0 #ffffff;
+}
+
+.page-header__container--opened .main-nav__toggle {
+  top: 22px;
+  right: 20px;
+
+  width: 24px;
+  height: 23px;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+
+    width: 24px;
+    height: 4px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
 }
 
 .main-nav__list {
