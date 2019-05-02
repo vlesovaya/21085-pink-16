@@ -1,55 +1,86 @@
 .app {
-  color: @white;
+  width: auto;
+  color: #ffffff;
   background-color: @bg-darkblue;
+  background-image: url("./../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.app__promo {
+  padding-top: 28px;
+}
+
+.app__slogan {
+  display: none;
+  margin: 0 auto 39px;
+  width: 186px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 300;
 }
 
 .app__download-link {
-  //display: inline-block;
-  //vertical-align: center;
-  margin-right: 19px;
-  margin-left: 19px;
-  padding: 17px 36px 14px 37px;
+  display: block;
+  text-align: center;
+  width: 275px;
+  margin: 0 auto 32px;
+  padding: 17px 0;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 1;
   font-weight: 700;
-  color: @white;
-  border: 3px solid @white;
+  color: #ffffff;
+  border: 3px solid #ffffff;
   border-radius: 30px;
   text-decoration: none;
 }
 
 .app__app-logo {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 28px;
+  padding: 0;
   list-style: none;
 }
 
 .app__image {
-  margin-top: 0;
-  margin-bottom: 28px;
-  background-image: url("./../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
+  position: relative;
+  margin: 0 auto;
   width: 320px;
   height: 462px;
 }
 
-.app-logo_icon a {
+.app__image--hand {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.app-logo__icon a {
   display: inline-block;
 }
 
-.app-logo_icon--apple {
+.app-logo__icon--apple {
+  margin-right: 34px;
   background-image: url("./../img/logo-apple.svg");
   background-repeat: no-repeat;
   width: 47px;
   height: 56px;
 }
 
-.app-logo_icon--android {
+.app-logo__icon--android {
+  margin-top: 8px;
+  margin-right: 37px;
   background-image: url("./../img/logo-android.svg");
   background-repeat: no-repeat;
   width: 43px;
   height: 47px;
 }
 
-.app-logo_icon--microsoft {
+.app-logo__icon--microsoft {
+  margin-top: 12px;
   background-image: url("./../img/logo-microsoft.svg");
   background-repeat: no-repeat;
   width: 44px;
@@ -57,6 +88,110 @@
 }
 
 .app__available {
+  display: block;
+  width: 230px;
+  margin: 0 auto;
   padding-bottom: 35px;
+  text-align: center;
   font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .app {
+    min-height: 730px;
+    background-image: url("./../img/bg-back-tablet@1x.jpg");
+  }
+
+  .app__image {
+    position: relative;
+    width: 660px;
+    height: 730px;
+    z-index: 2;
+  }
+
+  .app__image--hand {
+    width: 470px;
+    height: 545px;
+    left: 150px;
+    bottom: 0;
+  }
+
+  .app__container {
+    position: relative;
+    width: 620px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .app__promo {
+    position: absolute;
+    padding: 0;
+    left: 0;
+    bottom: 109px;
+    z-index: 10;
+  }
+
+  .app__slogan {
+    display: block;
+    margin-bottom: 39px;
+  }
+
+  .app__download-link {
+    width: 294px;
+    margin-bottom: 46px;
+  }
+
+  .app__app-logo {
+    margin-bottom: 41px;
+  }
+
+  .app__available {
+    width: 300px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .app {
+    min-height: 853px;
+    background-image: url("./../img/bg-back-desktop@1x.jpg");
+  }
+
+  .app__container {
+    width: 940px;
+  }
+
+  .app__image {
+    width: 940px;
+    height: 853px;
+  }
+
+  .app__image--hand {
+    width: 560px;
+    height: 645px;
+    left: 350px;
+    bottom: 0;
+  }
+
+  .app__promo {
+    left: 0;
+    bottom: 120px;
+  }
+
+  .app__slogan {
+    width: 235px;
+    margin-bottom: 61px;
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .app__download-link {
+    margin-bottom: 67px;
+  }
+
+  .app__app-logo {
+    margin-bottom: 60px;
+  }
 }

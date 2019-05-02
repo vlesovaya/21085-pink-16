@@ -9,5 +9,39 @@ body {
   color: #283645;
   font-style: normal;
 
-  background-color: @bg-white;
+  background-color: #ffffff;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+//@media (min-width: @tablet-width) {
+//  .container {
+//  }
+//}
+
+@media (min-width: @desktop-width) {
+  .container {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }
