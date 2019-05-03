@@ -9,7 +9,7 @@
 </head>
 <body>
 <header class="page-header">
-  <div class="page-header__container container">
+  <div class="page-header__container container page-header__container--opened page-header__container--nojs">
     <a class="page-header__logo">
       <picture>
         <source media="(min-width:960px" ) srcset="img/logo-pink-white-desktop.svg">
@@ -17,8 +17,8 @@
         <img class="page-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="Наш логотип">
       </picture>
     </a>
-  <nav class="main-nav">
-    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+    <nav class="main-nav">
     <div class="main-nav__wrapper">
       <ul class="main-nav__list ">
         <li class="main-nav__item">
@@ -155,5 +155,6 @@
     </div>
   </div>
 </footer>
+<script src="js/js-menu.js"></script>
 </body>
 </html>
