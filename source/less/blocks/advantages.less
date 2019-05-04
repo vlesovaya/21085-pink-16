@@ -45,8 +45,8 @@
   color: #000000;
 }
 
-.advantages_description {
-  margin-top: 17px;
+.advantages__description {
+  margin-top: 0;
   margin-bottom: 40px;
 }
 
@@ -89,14 +89,15 @@
 
 @media (min-width: @desktop-width) {
   .advantages {
-    height: 1240px;
+    height: 815px;
+    margin-bottom: 65px;
   }
 
   .advantages__promo {
     width: 750px;
-    margin: 75px auto;
+    margin: 70px auto;
     font-size: 50px;
-    line-height: 55px;
+    line-height: 60px;
   }
 
   .advantages__promo--answer {
@@ -118,6 +119,11 @@
     text-align: center;
   }
 
+  .advantages__description {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
   .advantages__image {
     display: none;
   }
@@ -128,30 +134,9 @@
   }
 
   .advantages__title {
+    margin-top: 60px;
+    margin-bottom: 20px;
     font-size: 30px;
     line-height: 1;
-  }
-
-  .advantages__description {
-    font-size: 18px;
-    line-height: 30px;
-    margin: 0;
-  }
-
-  .advantages__item--bottom {
-    display: block;
-    width: 535px;
-    margin: 0 -30px;
-    padding: 114px 45px 118px 365px;
-    text-align: left;
-  }
-
-  .advantages__learn {
-    display: block;
-    margin-top: 40px;
-    font-size: 18px;
-    line-height: 30px;
-    color: #d22856;
-    text-decoration: underline;
   }
 }
