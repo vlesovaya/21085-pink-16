@@ -1,0 +1,110 @@
+.research {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .research {
+    display: block;
+    width: auto;
+  }
+
+  .research__title {
+    width: 170px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .research__about {
+    width: 296px;
+    margin: 0 auto;
+    padding-top: 43px;
+    padding-left: 310px;
+    padding-bottom: 31px;
+    position: relative;
+    background: url("./../img/icon-editor-diagram-fill.svg"), url("./../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    background-position: 18px 55px, 0 0;
+    background-size: 202px 202px, 238px 276px;
+  }
+
+  .research__about::before {
+    position: absolute;
+    content: "";
+    width: 170px;
+    height: 170px;
+    top: 72px;
+    left: 34px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  .research__about::after {
+    position: absolute;
+    content: "24";
+    top: 105px;
+    left: 65px;
+    font-size: 96px;
+    line-height: 1;
+    font-weight: 700;
+    color: #d22856;
+  }
+
+
+  .research__learn {
+    color: #d22856;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .research {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .research__about {
+    width: 525px;
+    padding-top: 95px;
+    padding-left: 365px;
+    padding-right: 50px;
+    padding-bottom: 51px;
+
+    background-position: 22px 69px, 0 0;
+    background-size: 253px 253px, 298px 345px;
+  }
+
+  .research__about::before {
+    position: absolute;
+    content: "";
+    width: 215px;
+    height: 215px;
+    top: 88px;
+    left: 40px;
+  }
+
+  .research__about::after {
+    top: 130px;
+    left: 80px;
+    font-size: 120px;
+  }
+
+  .research__description {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .research__title {
+    width: 525px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 1;
+  }
+
+  .research__learn {
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
