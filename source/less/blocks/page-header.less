@@ -2,6 +2,21 @@
   background-color: @bg-blue;
 }
 
+.page-header .page-header__container--closed {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  min-width: 320px;
+  top: 0;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 4;
+}
+
+.page-header__container--closed .page-header__logo {
+  border-bottom: none;
+}
+
 .page-header__container {
   position: relative;
 }
