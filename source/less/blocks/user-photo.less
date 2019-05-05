@@ -16,7 +16,7 @@
 .user-photo__caption {
   width: 240px;
   margin: -10px auto 20px;
-  padding: 25px 20px 20px 20px;
+  padding: 25px 20px 40px 20px;
   background-color: @bg-gray;
 }
 
@@ -35,11 +35,21 @@
 }
 
 .user-photo__like {
+  position: relative;
   display: block;
   font-size: 12px;
   color: @red;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.user-photo__like-text {
+  position: absolute;
+  width: 240px;
+  padding-left: 30px;
+  background-image: url("./../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 5px;
 }
 
 @media (min-width: @tablet-width) {
@@ -59,17 +69,8 @@
 
   .user-photo__caption {
     min-height: 110px;
-    padding-top: 25px;
-    padding-left: 27px;
-    padding-right: 33px;
+    padding: 25px 33px 20px 27px;
     margin-bottom: 0;
-  }
-
-  .user-photo__caption--image-day {
-    width: 565px;
-    padding-top: 31px;
-    padding-right: 29px;
-    padding-left: 27px;
   }
 
   .user-photo__content {
@@ -78,6 +79,39 @@
 
   .user-photo__like {
     margin-top: auto;
+  }
+
+  .user-photo__like-text {
+    background-position: 220px 5px;
+    padding-left: 0;
+  }
+
+  .user-photo__caption--image-day {
+    display: flex;
+    flex-wrap: wrap;
+    width: 565px;
+    min-height: 62px;
+    padding: 31px 29px 8px 27px;
+  }
+
+  .user-photo__user-info--image-day {
+    margin-right: 300px;
+    order: -2;
+  }
+
+  .user-photo__content--image-day {
+    order: 1;
+  }
+
+  .user-photo__like--image-day {
+    margin-top: 0;
+    order: -1;
+  }
+
+  .user-photo__like-text--image-day {
+    width: 120px;
+    padding-right: 17px;
+    background-position: 110px 5px;
   }
 }
 
@@ -96,10 +130,16 @@
   }
 
   .user-photo__caption--image-day {
-    width: 884px;
+    width: 865px;
+    height: 38px;
+    padding: 31px 50px 7px 27px;
   }
 
   .user-photo__image {
     height: 400px;
+  }
+
+  .user-photo__user-info--image-day {
+    margin-right: 620px;
   }
 }
