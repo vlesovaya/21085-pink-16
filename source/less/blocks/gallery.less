@@ -3,26 +3,6 @@
   margin: 0 auto;
 }
 
-.page__title {
-  width: auto;
-  max-height: 240px;
-  background-color: @bg-darkblue;
-  background-image: url("./../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center 0;
-}
-
-.page-title__text {
-  width: 170px;
-  padding: 35px 0 85px;
-  margin: 0 auto;
-  font-size: 24px;
-  line-height: normal;
-  font-weight: 300;
-  color: #ffffff;
-  text-align: center;
-}
-
 .gallery__slogan {
   margin: 55px auto;
 }
@@ -36,17 +16,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page__title {
-    max-height: 440px;
-    background-image: url("./../img/bg-back-tablet@1x.jpg");
-  }
-
-  .page-title__text {
-    width: 350px;
-    padding: 80px 0 150px;
-    font-size: 50px;
-  }
-
   .gallery__slogan {
     margin: 100px auto 80px;
   }
@@ -63,20 +32,14 @@
     width: 620px;
     margin: 0 auto;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    .gallery__container {
-      width: 940px;
-    }
+@media (min-width: @desktop-width) {
+  .gallery__container {
+    width: 940px;
+  }
 
-    .page__title {
-      width: auto;
-      height: 400px;
-      background-image: url("./../img/bg-back-desktop@1x.jpg");
-    }
-
-    .gallery__slogan p {
-      width: 575px;
-    }
+  .gallery__slogan p {
+    width: 575px;
   }
 }

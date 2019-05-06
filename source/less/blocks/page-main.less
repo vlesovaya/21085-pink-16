@@ -1,0 +1,56 @@
+.page-main__title {
+  width: auto;
+  min-height: 240px;
+  background-color: @bg-darkblue;
+  background-image: url("./../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+}
+
+.page-main__title-text {
+  width: 170px;
+  padding: 100px 0 85px;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: normal;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: center;
+}
+
+.page-main__title-text--form {
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__title {
+    min-height: 440px;
+    background-image: url("./../img/bg-back-tablet@1x.jpg");
+  }
+
+  .page-main__title-text {
+    width: 350px;
+    padding: 170px 0 79px;
+    font-size: 50px;
+  }
+
+  .page-main__title-text--form {
+    width: 480px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__title {
+    width: auto;
+    background-image: url("./../img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-main__title-text {
+    padding: 183px 0 100px;
+    padding-top: 184px;
+  }
+
+  .page-main__title-text--form {
+    width: 800px;
+  }
+}
