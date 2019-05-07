@@ -1,3 +1,82 @@
 .reviews {
-  margin-top: 193px;
+  position: relative;
+  margin-top: 50px;
 }
+
+.reviews input {
+  display: none;
+}
+
+.reviews__list {
+  position: relative;
+  width: 280px;
+  min-height: 225px;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 50px;
+  list-style: none;
+}
+
+.reviews__item {
+  position: absolute;
+  text-align: center;
+  display: none;
+}
+
+.reviews__author-name {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.reviews__text {
+  margin: 0;
+  line-height: 30px;
+}
+
+.slider-controls {
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  z-index: 2;
+
+  width: 100px;
+  height: 15px;
+
+  text-align: center;
+  font-size: 0;
+  transform: translateX(-50%);
+}
+
+.slider-controls label {
+  display: inline-block;
+  vertical-align: center;
+  width: 6px;
+  height: 6px;
+  margin-right: 19px;
+  background: #283645;
+  opacity: 0.3;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls label:last-child {
+  margin-right: 0;
+}
+
+#review-1:checked ~.slider-controls label[for=review-1],
+#review-2:checked ~.slider-controls label[for=review-2],
+#review-3:checked ~.slider-controls label[for=review-3]{
+  border: 3px solid #283645;
+  opacity: 1;
+  background-color: #ffffff;
+}
+
+#review-1:checked ~ .reviews__list .reviews__item--1,
+#review-2:checked ~ .reviews__list .reviews__item--2,
+#review-3:checked ~ .reviews__list .reviews__item--3 {
+  display: block;
+}
+
