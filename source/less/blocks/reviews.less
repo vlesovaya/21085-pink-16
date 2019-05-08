@@ -123,3 +123,56 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .reviews__list {
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 115px;
+    padding-bottom: 0;
+    background-image: url("./../img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  #review-1:checked ~ .reviews__list > .reviews__item--1,
+  #review-2:checked ~ .reviews__list > .reviews__item--2,
+  #review-3:checked ~ .reviews__list > .reviews__item--3 {
+    width: 690px;
+    padding-left: 125px;
+    padding-right: 125px;
+    margin: 0 auto;
+  }
+
+  .slider-arrows {
+    position: relative;
+  }
+
+  .slider-arrows button {
+    position: absolute;
+    width: 22px;
+    height: 40px;
+    top: 143px;
+    background-color: transparent;
+    opacity: 0.3;
+    border: none;
+    cursor: pointer;
+  }
+
+  .arrow-left {
+    left: 10px;
+    background-image: url("./../img/icon-review-arrow-left.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .arrow-right {
+    right: -10px;
+    background-image: url("./../img/icon-review-arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+
+  .slider-controls {
+    display: none;
+  }
+}
