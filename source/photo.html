@@ -169,48 +169,54 @@
     </div>
   </section>
   <form class="upload-form" action="https://echo.htmlacademy.ru" method="post">
-    <div class="upload__container container">
+    <div class="upload-form__container container">
       <div class="upload-form__slogan">
         <p class="upload-form__slogan-text">Затмите их всех!</p>
         <p class="upload-form__slogan-text">Выкладывайте все, что накопилось в телефоне!</p>
       </div>
-      <div class="upload-form__content">
-        <fieldset class="upload-form__image-select">
-          <picture>
-            <source media="(min-width:960px" ) srcset="img/photo-road-desktop@1x.jpg">
-            <source media="(min-width: 660px" ) srcset="img/photo-road-tablet@1x.jpg">
-            <img src="./img/photo-road-mobile@1x.jpg" alt="Загружаемое фото" width="280" height="374">
-          </picture>
-        </fieldset>
-        <div class="upload-form__filter-controls">
-          <input type="radio" id="upload-filter-1" name="upload-filter" checked>
-          <label class="upload-form__filter-toggle" for="upload-filter-1"></label>
+    </div>
+    <div class="upload-form__content">
+      <fieldset class="upload-form__image-select">
+        <picture>
+          <source media="(min-width:960px" ) srcset="img/photo-road-desktop@1x.jpg">
+          <source media="(min-width: 660px" ) srcset="img/photo-road-tablet@1x.jpg">
+          <img src="./img/photo-road-mobile@1x.jpg" alt="Загружаемое фото" width="280" height="374">
+        </picture>
+      </fieldset>
+      <div class="upload-form__filter-controls">
+        <input type="radio" id="upload-filter-1" name="upload-filter" checked>
+        <label class="upload-form__filter-toggle" for="upload-filter-1"></label>
 
-          <input type="radio" id="upload-filter-2" name="upload-filter">
-          <label class="upload-form__filter-toggle" for="upload-filter-2"></label>
+        <input type="radio" id="upload-filter-2" name="upload-filter">
+        <label class="upload-form__filter-toggle" for="upload-filter-2"></label>
 
-          <input type="radio" id="upload-filter-3" name="upload-filter">
-          <label class="upload-form__filter-toggle" for="upload-filter-3"></label>
+        <input type="radio" id="upload-filter-3" name="upload-filter">
+        <label class="upload-form__filter-toggle" for="upload-filter-3"></label>
+      </div>
+      <div class="range-controls">
+        <div class="range-controls__filter range-controls__filter--1">
+          <div class="range-controls__bar"></div>
+          <div class="range-controls__toggle"></div>
         </div>
-        <div class="range-controls">
-          <div class="range-controls__wrapper  range-controls__wrappper-1">
-            <input class="range-filter" type="range" id="range-filter-1" name="range-filter">
-          </div>
 
-          <div class="range-controls__wrapper  range-controls__wrapper-2">
-            <input class="range-filter" type="range" id="range-filter-2" name="range-filter">
-          </div>
+        <div class="range-controls__filter range-controls__filter--2">
+          <div class="range-controls__bar"></div>
+          <div class="range-controls__toggle"></div>
+        </div>
 
-          <div class="range-controls__wrappper  range-controls__wrapper-3">
-            <input class="range-filter" type="range" id="range-filter-3" name="range-filter">
-          </div>
-          <div class="upload-form__button">
-            <input class="button upload-form__submit-photo button--active" id="submit-btn" type="submit"
-                   value="Запостить">
-            <input class="button upload-form__reset-photo button-disabled" id="reset-btn" type="reset" value="Отмена">
-          </div>
+        <div class="range-controls__filter range-controls__filter--3">
+          <div class="range-controls__bar"></div>
+          <div class="range-controls__toggle"></div>
         </div>
       </div>
+      <div class="upload-form__button">
+        <div class="upload-form__container container">
+          <input class="button upload-form__submit-photo button--active" id="submit-btn" type="submit"
+                 value="Запостить">
+          <input class="button upload-form__reset-photo button-disabled" id="reset-btn" type="reset" value="Отмена">
+        </div>
+      </div>
+    </div>
     </div>
   </form>
 </main>
