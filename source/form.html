@@ -42,13 +42,13 @@
   <div class="page-main__title">
     <h1 class="page-main__title-text page-main__title-text--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
   </div>
-  <div class="page-main__container container">
     <section class="contest-form form">
       <p class="contest-form__conditions">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на
         вашу бонусную
-        карту! Пожалуйста, заполните форму ниже:</p>
+        карту!
+      <p class="contest-form__conditions contest-form__conditions-bottom">Пожалуйста, заполните форму ниже:</p>
       <h2 class="visually-hidden">Заполните форму</h2>
-      <form class="form__body" action="https://echo.htmlacademy.ru" method="get">
+      <form class="contest-form__body" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="personal-information">
           <label class="surname">Фамилия:</label>
           <input id="user-surname" type="text" name="name" value="" placeholder="Укажите фамилию *">
@@ -58,30 +58,30 @@
           <input id="user-patronymic" type="text" name="name" value="" placeholder="Ну и отчество тоже">
         </fieldset>
         <fieldset class="achievements">
-          <legend class="achievements__legend">Ваши безбашенные достижения в путешествии</legend>
+          <label class="achievements__title">Ваши безбашенные достижения в путешествии</label>
           <p class="achievements__filter filter">
             <input class="filter__input filter__input--checkbox" type="checkbox" name="achievement" id="selfie" checked>
-            <label for="selfie">Сделал селфи с акулой</label>
+            <label class="filter__item" for="selfie">Сделал селфи с акулой</label>
           </p>
           <p class="achievements__filter">
             <input class="filter__input filter__input--checkbox" type="checkbox" name="achievement" id="beach" checked>
-            <label for="beach">Обгорел на пляже</label>
+            <label class="filter__item" for="beach">Обгорел на пляже</label>
           </p>
           <p class="achievements__filter">
             <input class="filter__input" type="checkbox" name="achievement" id="saw">
-            <label for="saw">Видел Чака Норриса</label>
+            <label class="filter__item" for="saw">Видел Чака Норриса</label>
           </p>
           <p class="achievements__filter">
             <input class="filter__input" type="checkbox" name="achievement" id="bought">
-            <label for="bought">Накупил сувениров</label>
+            <label class="filter__item" for="bought">Накупил сувениров</label>
           </p>
           <p class="achievements__filter">
             <input class="filter__input filter__input--checkbox" type="checkbox" name="achievement" id="kept" checked>
-            <label for="kept">Удержал башню</label>
+            <label class="filter__item" for="kept">Удержал башню</label>
           </p>
           <p class="achievements__filter">
             <input class="filter__input" type="checkbox" name="achievement" id="сrushed">
-            <label for="сrushed">Разгромил отель</label>
+            <label class="filter__item" for="сrushed">Разгромил отель</label>
           </p>
         </fieldset>
         <fieldset class="your-contacts">
@@ -91,7 +91,7 @@
           <input type="email" name="email" id="user-email" placeholder="Введите почту *">
         </fieldset>
         <fieldset class="travel-app">
-          <legend class="travel-app__legend">С каким приложением путешествовали?</legend>
+          <label class="travel-app__title">С каким приложением путешествовали?</label>
           <p class="travel-app__filter">
             <input class="filter-input" type="radio" name="app" value="ios" id="ios" checked>
             <label for="ios">Pink для iOS</label>
@@ -106,16 +106,15 @@
           </p>
         </fieldset>
         <fieldset class="emotions">
-          <p>
+          <p class="emotions__form">
             <label for="emotions__letter">Опишите свои эмоции</label>
             <textarea id="emotions__letter" name="text" rows="10" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </p>
         </fieldset>
-        <button class="send" type="submit">Отправить форму</button>
-        <span class="form-note">* — обязательные поля</span>
+        <button class="emotions__send" type="submit">Отправить форму</button>
+        <span class="emotions__form-note">* — обязательные поля</span>
       </form>
     </section>
-  </div>
   </div>
 </main>
 <footer class="page-footer">
@@ -148,6 +147,7 @@
       </a>
     </div>
   </div>
+</footer>
 <script src="js/js-menu.js"></script>
 </body>
 </html>

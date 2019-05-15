@@ -1,0 +1,263 @@
+.contest-form {
+  width: auto;
+}
+
+.contest-form__body {
+  margin: 0 auto;
+}
+
+.contest-form__conditions {
+  width: 280px;
+  margin: 55px auto 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.contest-form__conditions-bottom {
+  display: none;
+}
+
+.personal-information,
+.achievements,
+.your-contacts,
+.travel-app,
+.emotions {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.personal-information {
+  width: 280px;
+  margin: 0 auto 44px;
+  padding: 0 20px;
+}
+
+.personal-information label,
+.achievements__title,
+.your-contacts label,
+.travel-app__title,
+.emotions label {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 17px;
+  padding-left: 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d22856;
+  text-align: left;
+}
+
+.personal-information input,
+.your-contacts input {
+  width: 276px;
+  height: 59px;
+  border: 2px solid #e5e5e5;
+}
+
+.contest-form input::placeholder {
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.achievements {
+  display: block;
+  width: auto;
+  padding: 0 20px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+
+.achievements__title {
+  width: 218px;
+  margin: 42px auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+.filter__item {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.achievements__filter {
+  width: 280px;
+  margin: 0 auto 47px;
+}
+
+.achievements__filter label {
+  padding: 5px 0 5px 70px;
+  color: #283645;
+}
+
+.achievements__filter input[type="checkbox"] {
+  display: none;
+}
+
+.achievements__filter input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.achievements__filter input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+
+  left: 0;
+  top: 0;
+}
+
+.achievements__filter input[type="checkbox"]:checked + label::before {
+  background-image: url("./../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.your-contacts {
+  width: 280px;
+  margin: 0 auto 45px;
+}
+
+.travel-app {
+  display: block;
+  width: auto;
+  padding: 0 20px;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+
+.travel-app__title {
+  display: block;
+  width: 180px;
+  margin: 40px auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.travel-app__filter {
+  width: 280px;
+  margin: 0 auto 44px;
+}
+
+.travel-app__filter label {
+  padding: 5px 0 5px 70px;
+  color: #283645;
+}
+
+.travel-app__filter input[type="radio"] {
+  display: none;
+}
+
+.travel-app__filter input[type="radio"] + label {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.travel-app__filter input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 36px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  left: 0;
+  top: 0;
+}
+
+.travel-app__filter input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d22856;
+
+  left: 12px;
+  top: 12px;
+}
+
+.emotions {
+  width: auto;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.emotions__form {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.emotions label {
+  display: block;
+  width: 185px;
+  margin: 41px auto 19px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.emotions textarea {
+  width: 276px;
+  height: 197px;
+  border: 2px solid #e5e5e5;
+  resize: none;
+}
+
+.emotions textarea::placeholder {
+  padding-top: 23px;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.emotions__send {
+  display: block;
+  width: 276px;
+  padding: 22px;
+  margin: 52px auto 46px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 2px solid #2aab6d;
+  color: #ffffff;
+  background-color: #2aab6d;
+}
+
+.emotions__form-note {
+  display: block;
+  width: 185px;
+  margin: 0 auto 65px;
+  padding: 0;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+
