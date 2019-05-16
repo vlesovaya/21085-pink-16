@@ -23,27 +23,27 @@
   outline: none;
 }
 
-.personal-information,
-.achievements,
-.your-contacts,
-.travel-app,
-.emotions {
+.contest-form__personal-information,
+.contest-form__achievements,
+.contest-form__your-contacts,
+.contest-form__app,
+.contest-form__emotions {
   padding: 0;
   margin: 0;
   border: none;
 }
 
-.personal-information {
+.contest-form__personal-information {
   width: 280px;
   margin: 0 auto 44px;
   padding: 0 20px;
 }
 
-.personal-information label,
-.achievements__title,
-.your-contacts label,
-.travel-app__title,
-.emotions label {
+.contest-form__personal-information label,
+.contest-form__achievements-title,
+.contest-form__your-contacts label,
+.contest-form__app-title,
+.contest-form__emotions label {
   display: block;
   margin-top: 30px;
   margin-bottom: 17px;
@@ -54,8 +54,8 @@
   text-align: left;
 }
 
-.personal-information input,
-.your-contacts input {
+.contest-form__personal-information input,
+.contest-form__your-contacts input {
   width: 276px;
   height: 59px;
   border: 2px solid #e5e5e5;
@@ -68,7 +68,7 @@
   color: #283645;
 }
 
-.achievements {
+.contest-form__achievements {
   display: block;
   width: auto;
   padding: 0 20px;
@@ -76,7 +76,7 @@
   background-color: #f2f2f2;
 }
 
-.achievements__title {
+.contest-form__achievements-title {
   width: 220px;
   margin: 42px auto;
   padding: 0;
@@ -87,22 +87,22 @@
   background-color: #f2f2f2;
 }
 
-.filter__item {
+.contest-form__filter-item {
   font-size: 18px;
   line-height: 30px;
 }
 
-.achievements__filter {
+.contest-form__achievements-filter {
   width: 280px;
   margin: 0 auto 47px;
 }
 
-.achievements__filter label {
+.contest-form__achievements-filter label {
   padding: 5px 0 5px 70px;
   color: #283645;
 }
 
-.achievements__filter input[type="checkbox"] + label {
+.contest-form__achievements-filter input[type="checkbox"] + label {
   position: relative;
   display: inline-block;
   font-size: 18px;
@@ -111,7 +111,7 @@
   cursor: pointer;
 }
 
-.achievements__filter input[type="checkbox"] + label::before {
+.contest-form__achievements-filter input[type="checkbox"] + label::before {
   content: "";
   position: absolute;
   display: block;
@@ -124,18 +124,18 @@
   top: 0;
 }
 
-.achievements__filter input[type="checkbox"]:checked + label::before {
+.contest-form__achievements-filter input[type="checkbox"]:checked + label::before {
   background-image: url("./../img/icon-yes.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.your-contacts {
+.contest-form__your-contacts {
   width: 280px;
   margin: 0 auto 45px;
 }
 
-.travel-app {
+.contest-form__app {
   display: block;
   width: auto;
   padding: 0 20px;
@@ -143,7 +143,7 @@
   background-color: #f2f2f2;
 }
 
-.travel-app__title {
+.contest-form__app-title {
   display: block;
   width: 182px;
   margin: 40px auto;
@@ -154,21 +154,17 @@
   text-align: center;
 }
 
-.travel-app__filter {
+.contest-form__app-filter {
   width: 280px;
   margin: 0 auto 44px;
 }
 
-.travel-app__filter label {
+.contest-form__app-filter label {
   padding: 5px 0 5px 70px;
   color: #283645;
 }
 
-.travel-app__filter input[type="radio"] {
-  display: none;
-}
-
-.travel-app__filter input[type="radio"] + label {
+.contest-form__app-filter input[type="radio"] + label {
   position: relative;
   display: inline-block;
   font-size: 18px;
@@ -177,7 +173,7 @@
   cursor: pointer;
 }
 
-.travel-app__filter input[type="radio"] + label::before {
+.contest-form__app-filter input[type="radio"] + label::before {
   content: "";
   position: absolute;
   display: block;
@@ -191,7 +187,7 @@
   top: 0;
 }
 
-.travel-app__filter input[type="radio"]:checked + label::after {
+.contest-form__app-filter input[type="radio"]:checked + label::after {
   content: "";
   position: absolute;
   display: block;
@@ -204,18 +200,18 @@
   top: 12px;
 }
 
-.emotions {
+.contest-form__emotions {
   width: auto;
   padding: 0 20px;
   margin: 0 auto;
 }
 
-.emotions__form {
+.contest-form__emotions-form {
   width: 280px;
   margin: 0 auto;
 }
 
-.emotions label {
+.contest-form__emotions label {
   display: block;
   width: 185px;
   margin: 41px auto 19px;
@@ -225,14 +221,14 @@
   text-align: center;
 }
 
-.emotions textarea {
+.contest-form__emotions textarea {
   width: 276px;
   height: 197px;
   border: 2px solid #e5e5e5;
   resize: none;
 }
 
-.emotions textarea::placeholder {
+.contest-form__emotions textarea::placeholder {
   padding-top: 23px;
   padding-left: 20px;
   font-size: 18px;
@@ -240,7 +236,7 @@
   color: #283645;
 }
 
-.emotions__send {
+.contest-form__emotions-send {
   display: block;
   width: 276px;
   padding: 22px;
@@ -255,21 +251,21 @@
   background-color: #2aab6d;
 }
 
-.emotions__send:hover {
+.contest-form__emotions-send:hover {
   background-color: #1c9b5e;
   border: 2px solid #1c9b5e;
 }
 
-.emotions__send:focus {
+.contest-form__emotions-send:focus {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.emotions__send:disabled {
+.contest-form__emotions-send:disabled {
   background-color: #e5e5e5;
   border: 2px solid #e5e5e5;
 }
 
-.emotions__form-note {
+.contest-form__form-note {
   display: block;
   width: 185px;
   margin: 0 auto 65px;
@@ -278,11 +274,11 @@
   text-transform: uppercase;
 }
 
-.emotions__form-note span {
+.contest-form__form-note span {
   color: #d22856;
 }
 
-.achievements__filter-input:focus + .achievements__filter-item::before {
+.contest-form__filter-input:focus + .contest-form__filter-item::before {
   border: 2px solid #d22856;
 }
 
