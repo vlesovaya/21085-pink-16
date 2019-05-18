@@ -50,12 +50,18 @@
       <h2 class="visually-hidden">Заполните форму</h2>
       <form class="contest-form__body" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="contest-form__personal-information">
+          <p class="contest-form__personal-information-item">
           <label class="surname">Фамилия:</label>
           <input id="user-surname" type="text" name="name" value="" placeholder="Укажите фамилию *">
+          </p>
+          <p class="contest-form__personal-information-item">
           <label class="name">Имя:</label>
           <input id="user-name" type="text" name="name" value="" placeholder="Введите ваше имя *">
+          </p>
+          <p class="contest-form__personal-information-item">
           <label class="patronymic">Отчество:</label>
           <input id="user-patronymic" type="text" name="name" value="" placeholder="Ну и отчество тоже">
+          </p>
         </fieldset>
         <fieldset class="contest-form__achievements">
           <h3 class="contest-form__achievements-title">Ваши безбашенные достижения в путешествии</h3>
@@ -85,10 +91,15 @@
           </p>
         </fieldset>
         <fieldset class="contest-form__your-contacts">
-          <label class="phone">Номер телефона</label>
+          <h3 class="contest-form__your-contacts-title">Контактная информация</h3>
+          <p class="contest-form__your-contacts-item">
+          <label>Номер телефона</label>
           <input type="tel" name="tel" id="user-phone" value="" placeholder="Номер, пожалуйста">
+          </p>
+          <p class="contest-form__your-contacts-item">
           <label class="phone">Адрес почты</label>
           <input type="email" name="email" id="user-email" placeholder="Введите почту *">
+          </p>
         </fieldset>
         <fieldset class="contest-form__app">
           <h3 class="contest-form__app-title">С каким приложением путешествовали?</h3>
@@ -106,13 +117,15 @@
           </p>
         </fieldset>
         <fieldset class="contest-form__emotions">
+          <h3 class="contest-form__emotions-title">Опишите свои эмоции</h3>
           <p class="contest-form__emotions-form">
-            <label for="contest-form__emotions-letter">Опишите свои эмоции</label>
             <textarea id="contest-form__emotions-letter" name="text" rows="10" cols="30" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </p>
         </fieldset>
-        <button class="contest-form__emotions-send" type="submit">Отправить форму</button>
+        <div class="contest-form__send">
+        <button class="contest-form__send-form" type="submit">Отправить форму</button>
         <p class="contest-form__form-note"><span>*</span> — обязательные поля</p>
+        </div>
       </form>
     </section>
   </div>
