@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-.contest-form__conditions-bottom {
+.contest-form__conditions span {
   display: none;
 }
 
@@ -291,8 +291,12 @@
   text-transform: uppercase;
 }
 
-.contest-form__form-note span {
+.contest-form__symbol {
   color: #d22856;
+}
+
+.contest-form__full-text {
+  display: none;
 }
 
 .contest-form__filter-input:focus + .contest-form__filter-item::before {
@@ -319,12 +323,10 @@
   .contest-form__body {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
   }
 
-  .contest-form__conditions-bottom {
+  .contest-form__conditions span {
     display: block;
-    width: 490px;
     margin-top: 0;
     margin-bottom: 20px;
   }
@@ -337,17 +339,18 @@
 
   .contest-form__personal-information-item {
     display: flex;
-    margin-top: 56px;
+    margin-top: 57px;
     margin-bottom: 0;
   }
 
   .contest-form__personal-information label {
-    margin: 22px 22px 22px 0;
+    margin: 15px 22px 14px 0;
     padding: 0;
   }
 
   .contest-form__personal-information input {
     width: 100%;
+    margin: 0;
   }
 
   .contest-form__app {
@@ -360,17 +363,21 @@
   .contest-form__app-title {
     width: 320px;
     padding: 0 25px;
-    margin: -11px auto 9px;
+    margin: -11px auto 15px;
     background-color: #ffffff;
   }
 
   .contest-form__app-filter {
     width: 500px;
-    margin: 39px auto 0;
+    margin: 38px 0 0;
 
     &:last-child {
-      margin-bottom: 54px;
+      margin-bottom: 53px;
     }
+  }
+
+  .contest-form__filter-item {
+    margin-left: 59px;
   }
 
   .contest-form__your-contacts {
@@ -403,7 +410,7 @@
   }
 
   .contest-form__your-contacts-item label {
-    margin: 20px 0 0;
+    margin: 15px 0 0;
     padding: 0;
     order: 1;
   }
@@ -411,10 +418,10 @@
   .contest-form__your-contacts-item input {
     //position: relative;
     display: block;
-    width: 432px;
+    width: 496px;
     margin-top: 40px;
     order: -1;
-    padding-right: 60px;
+    //padding-right: 60px;
   }
 
   //input[type="tel"]::before {
@@ -428,7 +435,6 @@
   //  right: 0;
   //  top: 0;
   //}
-
   //.contest-form__your-contacts input[type="tel"]::after {
   //  content: "";
   //  position: absolute;
@@ -441,8 +447,6 @@
   //  right: 22px;
   //  top: 22px;
   //}
-
-
   .contest-form__achievements {
     width: 616px;
     margin-bottom: 69px;
@@ -508,5 +512,137 @@
 
   .contest-form__form-note {
     margin: 15px 0;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .contest-form {
+    width: 940px;
+    margin: 100px auto 0;
+  }
+
+  .contest-form__conditions {
+    width: 755px;
+    margin: 0 auto 64px;
+  }
+
+  .contest-form__conditions span {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .contest-form__body {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .contest-form__personal-information {
+    width: 430px;
+    margin: 10px 0 0;
+    padding-right: 70px;
+  }
+
+  .contest-form__personal-information-item:first-child {
+    margin-top: 0;
+  }
+
+  .contest-form__app {
+    width: 430px;
+    margin: 0;
+  }
+
+  .contest-form__app-filter {
+    width: 360px;
+  }
+
+  .contest-form__filter-item {
+    margin-left: 75px;
+  }
+
+  .contest-form__your-contacts {
+    padding: 0 60px;
+    width: 932px;
+  }
+
+  .contest-form__your-contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 820px;
+    margin: 40px 0 10px;
+  }
+
+  .contest-form__your-contacts-item {
+    width: 371px;
+    margin: 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .contest-form__your-contacts-item label {
+    padding-left: 20px;
+  }
+
+  .contest-form__your-contacts-item input {
+    width: 367px;
+    margin: 0;
+  }
+
+  .contest-form__achievements {
+    width: 936px;
+  }
+
+  .contest-form__achievements-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 820px;
+    margin: 0 auto 10px;
+  }
+
+  .contest-form__achievements-filter {
+    width: 260px;
+    margin: 0 0 45px 0;
+  }
+
+  .contest-form__achievements-filter label {
+    margin: 0;
+    padding-left: 60px;
+  }
+
+  .contest-form__emotions-form {
+    width: 936px;
+    height: 128px;
+    margin: 0 0 45px;
+  }
+
+  .contest-form__emotions textarea {
+    display: block;
+    width: 816px;
+    height: 124px;
+    margin: 37px auto 0;
+    padding: 0;
+  }
+
+  .contest-form__send {
+    width: 940px;
+    margin-bottom: 0;
+  }
+
+  .contest-form__send-form {
+    margin-right: 328px;
+  }
+
+  .contest-form__full-text {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .contest-form__form-note {
+    width: 315px;
   }
 }
