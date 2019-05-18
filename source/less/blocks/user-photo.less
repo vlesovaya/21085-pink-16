@@ -14,9 +14,11 @@
 }
 
 .user-photo__caption {
+  display: flex;
+  flex-direction: column;
   width: 240px;
   margin: -10px auto 20px;
-  padding: 25px 20px 40px 20px;
+  padding: 20px 20px 20px 20px;
   background-color: @bg-gray;
 
   &:last-child {
@@ -35,26 +37,20 @@
 }
 
 .user-photo__content {
-  margin: 0 0 10px 0;
+  margin: 0 0 7px 0;
 }
 
 .user-photo__like {
-  position: relative;
-  display: block;
   font-size: 12px;
   color: @red;
   text-decoration: none;
   text-transform: uppercase;
-}
-
-.user-photo__like-text {
-  position: absolute;
   width: 240px;
-  padding-left: 30px;
   background-image: url("./../img/icon-heart.svg");
   background-repeat: no-repeat;
-  background-position: 0 5px;
+  background-position: right center;
 }
+
 
 @media (min-width: @tablet-width) {
   .user-photo {
@@ -72,33 +68,30 @@
   }
 
   .user-photo__caption {
-    min-height: 110px;
-    padding: 25px 33px 20px 27px;
+    height: 110px;
+    padding: 20px 30px 20px 27px;
     margin-bottom: 0;
   }
 
   .user-photo__content {
-    margin-bottom: 10px;
+    margin: 0 0 10px 0;
   }
 
   .user-photo__like {
     margin-top: auto;
   }
 
-  .user-photo__like-text {
-    background-position: 220px 5px;
-    padding-left: 0;
-  }
-
   .user-photo__caption--image-day {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     width: 565px;
-    min-height: 62px;
+    height: auto;
     padding: 31px 29px 8px 27px;
   }
 
-  .user-photo__user-info--image-day {
+  .user-photo__post-info--image-day {
+    width: 140px;
     margin-right: 300px;
     order: -2;
   }
@@ -108,14 +101,10 @@
   }
 
   .user-photo__like--image-day {
-    margin-top: 0;
-    order: -1;
-  }
-
-  .user-photo__like-text--image-day {
     width: 120px;
-    padding-right: 17px;
-    background-position: 110px 5px;
+    margin-top: 0;
+    background-position: top 5px right;
+    order: -1;
   }
 }
 
@@ -130,20 +119,22 @@
 
   .user-photo__caption {
     margin-bottom: 0;
-    height: 94px;
   }
 
   .user-photo__caption--image-day {
-    width: 865px;
-    height: 38px;
-    padding: 31px 50px 7px 27px;
+    width: 881px;
+    padding: 30px 32px 20px 27px;
   }
 
   .user-photo__image {
     height: 400px;
   }
 
-  .user-photo__user-info--image-day {
-    margin-right: 620px;
+  .user-photo__post-info--image-day {
+    margin-right: 605px;
+  }
+
+  .user-photo__content--image-day {
+    margin: 0;
   }
 }
