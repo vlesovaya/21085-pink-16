@@ -5,6 +5,7 @@
 }
 
 .user-photo--top {
+  position: relative;
   width: 100%;
 }
 
@@ -49,6 +50,21 @@
   background-image: url("./../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-position: right center;
+}
+
+.user-photo__flag {
+  position: absolute;
+  display: block;
+  padding: 6px 18px;
+  width: 104px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: #d22856;
+  z-index: 10;
+  top: 0;
+  right: 20px;
 }
 
 
@@ -106,6 +122,10 @@
     background-position: top 5px right;
     order: -1;
   }
+
+  .user-photo__flag {
+    top: 57px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -136,5 +156,10 @@
 
   .user-photo__content--image-day {
     margin: 0;
+  }
+
+  .user-photo__flag {
+    top: 54px;
+    right: 130px;
   }
 }
