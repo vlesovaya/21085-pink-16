@@ -35,30 +35,6 @@
   display: none;
 }
 
-//.upload-form label[for="upload-filter-1"] {
-//  width: 44px;
-//  height: 44px;
-//  background-image: url("./../img/icon-editor-crop.svg");
-//  background-repeat: no-repeat;
-//  background-position: center;
-//}
-//
-//.upload-form label[for="upload-filter-2"] {
-//  width: 48px;
-//  height: 43px;
-//  background-image: url("./../img/icon-editor-fill.svg");
-//  background-repeat: no-repeat;
-//  background-position: center;
-//}
-//
-//.upload-form label[for="upload-filter-3"] {
-//  width: 32px;
-//  height: 32px;
-//  background-image: url("./../img/icon-editor-contrast.svg");
-//  background-repeat: no-repeat;
-//  background-position: center;
-//}
-
 .upload-form__filter-tool {
   fill: #283645;
   opacity: 0.3;
@@ -168,7 +144,7 @@
   .range-controls__filter {
     display: block;
     width: 202px;
-    margin: 0 0 30px;
+    padding-left: 30px;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
   }
 
@@ -183,23 +159,49 @@
     justify-content: space-between;
     align-items: center;
     width: 24px;
-    height: 190px;
-    margin: 65px 30px 24px 0;
+    margin: 55px 0 0 0;
   }
 
-  .crop {
+  .upload-form__filter-tool {
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+  }
+
+  .upload-form__filter-image--1 {
+    padding-top: 10px;
+    padding-bottom: 23px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+
+  .upload-form__filter-image--2 {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+
+  .upload-form__filter-image--3 {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+
+  .upload-form__filter-crop {
     width: 24px;
     height: 24px;
   }
 
-  .fill {
-    width: 22px;
+  .upload-form__filter-fill {
+    width: 24px;
     height: 22px;
+    margin: 1px 0;
   }
 
-  .contrast {
+  .upload-form__filter-contrast {
     width: 16px;
     height: 16px;
+    margin: 4px;
   }
 
   .crop,
@@ -215,23 +217,43 @@
 
   .range-controls__bar {
     width: 202px;
-    margin: 0 0 40px;
+    margin: 0 0 35px;
   }
 
   .range-controls__filter--1 .range-controls__toggle {
-    left: 145px;
+    left: 160px;
   }
 
   .range-controls__filter--2 .range-controls__toggle {
-    left: 25px;
+    left: 50px;
   }
 
   .range-controls__filter--3 .range-controls__toggle {
-    left: 95px;
+    left: 115px;
+  }
+
+  .upload-form__button {
+    width: 260px;
+    margin: 67px 0 0;
   }
 
   .upload-form__submit-photo,
   .upload-form__reset-photo {
     width: 260px;
+  }
+
+  .upload-form__submit-photo {
+    margin-top: 0;
+  }
+
+  .upload-form__reset-photo {
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .upload-form__container {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
