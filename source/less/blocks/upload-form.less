@@ -49,7 +49,7 @@
   opacity: 0.5;
 }
 
-.range-controls {
+.upload-form__range-controls {
   border-bottom: 1px solid rgba(40, 54, 69, 0.1);
 }
 
@@ -124,7 +124,7 @@
 @media (min-width: @tablet-width) {
   .upload-form__slogan {
     width: 422px;
-    margin: 74px auto 72px;
+    margin: 54px auto 72px;
     font-size: 18px;
   }
 
@@ -137,7 +137,7 @@
     padding: 57px 48px 54px 20px;
   }
 
-  .range-controls {
+  .upload-form__range-controls {
     margin-top: 75px;
   }
 
@@ -159,6 +159,7 @@
     justify-content: space-between;
     align-items: center;
     width: 24px;
+    height: 165px;
     margin: 55px 0 0 0;
   }
 
@@ -166,7 +167,6 @@
     display: block;
     width: 24px;
     height: 24px;
-    text-align: center;
   }
 
   .upload-form__filter-image--1 {
@@ -176,14 +176,14 @@
   }
 
   .upload-form__filter-image--2 {
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 23px;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
   }
 
   .upload-form__filter-image--3 {
-    padding-top: 15px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 23px;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
   }
 
@@ -211,7 +211,7 @@
     opacity: 1;
   }
 
-  .range-controls {
+  .upload-form__range-controls {
     border: none;
   }
 
@@ -252,8 +252,93 @@
 }
 
 @media (min-width: @desktop-width) {
-  .upload-form__container {
+  .upload-form__content {
+    width: 940px;
+  }
+
+  .upload-form__image-select {
+    padding: 57px 90px 50px 80px;
+  }
+
+  .upload-form__filter-tools {
+    width: 48px;
+    height: 30px;
+  }
+
+  .upload-form__filter-tool {
+    fill: #d22856;
+    opacity: 1;
+  }
+
+  .upload-form__filter-image--1 {
+    padding-top: 0;
+    padding-bottom: 12px;
+  }
+
+  .upload-form__filter-image--2 {
+    padding-top: 15px;
+    padding-bottom: 12px;
+  }
+
+  .upload-form__filter-image--3 {
+    padding-top: 15px;
+    padding-bottom: 12px;
+  }
+
+  .upload-form__filter-tool {
+    width: 48px;
+    height: 44px;
+    fill: #d22856;
+    opacity: 1;
+  }
+
+  .upload-form__filter-crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  .upload-form__filter-fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .upload-form__filter-contrast {
+    width: 32px;
+    height: 32px;
+  }
+
+  .upload-form__range-controls {
+    height: 180px;
+  }
+
+  .range-controls__filter {
+    width: 288px;
+    padding-left: 44px;
+    padding-right: 30px;
+  }
+
+  .range-controls__bar {
+    width: 288px;
+    margin: 0 0 34px;
+  }
+
+  .upload-form__button {
     display: flex;
-    flex-wrap: wrap;
+    width: 410px;
+    margin-top: 140px;
+    margin-bottom: 57px;
+  }
+
+
+
+  .upload-form__submit-photo,
+  .upload-form__reset-photo {
+    width: 183px;
+    padding: 17px;
+    margin-bottom: 0;
+  }
+
+  .upload-form__submit-photo {
+    margin-right: 44px;
   }
 }
