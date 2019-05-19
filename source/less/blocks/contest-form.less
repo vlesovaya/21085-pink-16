@@ -389,6 +389,7 @@
   }
 
   .contest-form__your-contacts-item {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -416,37 +417,36 @@
   }
 
   .contest-form__your-contacts-item input {
-    //position: relative;
     display: block;
     width: 496px;
     margin-top: 40px;
     order: -1;
-    //padding-right: 60px;
   }
 
-  //input[type="tel"]::before {
-  //  content: "";
-  //  position: absolute;
-  //  display: block;
-  //  width: 57px;
-  //  height: 57px;
-  //  background: #e5e5e5;
-  //
-  //  right: 0;
-  //  top: 0;
-  //}
-  //.contest-form__your-contacts input[type="tel"]::after {
-  //  content: "";
-  //  position: absolute;
-  //  display: block;
-  //  width: 20px;
-  //  height: 19px;
-  //  background: url("./../img/icon-phone.svg") no-repeat center;
-  //  background-size: 20px 19px;
-  //
-  //  right: 22px;
-  //  top: 22px;
-  //}
+  .contest-form__your-contacts-item::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 58px;
+    height: 55px;
+    background: #e5e5e5;
+
+    right: 0;
+    top: 42px;
+  }
+  .contest-form__your-contacts-item::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 19px;
+    background: url("./../img/icon-phone.svg") no-repeat center;
+    background-size: 20px 19px;
+
+    top: 60px;
+    right: 20px;
+  }
+
   .contest-form__achievements {
     width: 616px;
     margin-bottom: 69px;
@@ -589,6 +589,16 @@
   .contest-form__your-contacts-item input {
     width: 367px;
     margin: 0;
+  }
+
+  .contest-form__your-contacts-item::before {
+    top: 2px;
+    right: 2px;
+  }
+
+  .contest-form__your-contacts-item::after {
+    top: 20px;
+    right: 20px;
   }
 
   .contest-form__achievements {
