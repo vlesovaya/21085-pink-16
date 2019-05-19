@@ -1,0 +1,648 @@
+.contest-form {
+  width: auto;
+}
+
+.contest-form__body {
+  margin: 0 auto;
+}
+
+.contest-form__conditions {
+  width: 280px;
+  margin: 55px auto 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.contest-form__conditions span {
+  display: none;
+}
+
+.contest-form input:hover {
+  border: 2px solid #283645;
+  outline: none;
+}
+
+.contest-form input:focus {
+  border: 2px solid #d22856;
+  outline: none;
+}
+
+.contest-form__personal-information,
+.contest-form__achievements,
+.contest-form__your-contacts,
+.contest-form__app,
+.contest-form__emotions {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.contest-form__personal-information {
+  width: 280px;
+  margin: 0 auto 44px;
+}
+
+.contest-form__personal-information label,
+.contest-form__achievements-title,
+.contest-form__your-contacts label,
+.contest-form__app-title,
+.contest-form__emotions-title,
+.contest-form__your-contacts-title {
+  display: block;
+  margin-top: 30px;
+  margin-bottom: 17px;
+  padding-left: 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #d22856;
+  text-align: left;
+}
+
+.contest-form__personal-information input,
+.contest-form__your-contacts input {
+  width: 272px;
+  padding: 0;
+  height: 55px;
+  border: 2px solid #e5e5e5;
+}
+
+.contest-form input::placeholder {
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.contest-form__achievements {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+
+.contest-form__achievements-title {
+  width: 220px;
+  margin: 42px auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.contest-form__filter-item {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contest-form__achievements-filter {
+  width: 280px;
+  margin: 0 auto 47px;
+}
+
+.contest-form__achievements-filter label {
+  padding: 5px 0 5px 70px;
+  color: #283645;
+}
+
+.contest-form__achievements-filter input[type="checkbox"] + label {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.contest-form__achievements-filter input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+
+  left: 0;
+  top: 0;
+}
+
+.contest-form__achievements-filter input[type="checkbox"]:checked + label::before {
+  background-image: url("./../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contest-form__your-contacts {
+  width: 280px;
+  margin: 0 auto 45px;
+}
+
+.contest-form__your-contacts-title {
+  display: none;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.contest-form__app {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+}
+
+.contest-form__app-title {
+  display: block;
+  width: 182px;
+  margin: 40px auto;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.contest-form__app-filter {
+  width: 280px;
+  margin: 0 auto 44px;
+}
+
+.contest-form__app-filter label {
+  padding: 5px 0 5px 70px;
+  color: #283645;
+}
+
+.contest-form__app-filter input[type="radio"] + label {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.contest-form__app-filter input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 36px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  background-color: #ffffff;
+
+  left: 0;
+  top: 0;
+}
+
+.contest-form__app-filter input[type="radio"]:checked + label::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #d22856;
+
+  left: 12px;
+  top: 12px;
+}
+
+.contest-form__emotions {
+  width: auto;
+  margin: 0 auto;
+}
+
+.contest-form__emotions-form {
+  width: 276px;
+  height: 197px;
+  margin: 0 auto;
+}
+
+.contest-form__emotions-title {
+  width: 185px;
+  margin: 41px auto 19px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.contest-form__emotions textarea {
+  width: 272px;
+  height: 193px;
+  margin: 0;
+  padding: 0;
+  border: 2px solid #e5e5e5;
+  resize: none;
+}
+
+.contest-form__emotions textarea::placeholder {
+  padding-top: 23px;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+
+.contest-form__send {
+  width: auto;
+  margin: 50px auto 64px;
+}
+
+.contest-form__send-form {
+  display: block;
+  width: 276px;
+  padding: 18px 22px;
+  margin: 0 auto 46px;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 3px;
+  border: 2px solid #2aab6d;
+  color: #ffffff;
+  background-color: #2aab6d;
+}
+
+.contest-form__send-form:hover {
+  background-color: #1c9b5e;
+  border: 2px solid #1c9b5e;
+}
+
+.contest-form__send-form:focus {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contest-form__send-form:disabled {
+  background-color: #e5e5e5;
+  border: 2px solid #e5e5e5;
+}
+
+.contest-form__form-note {
+  display: block;
+  width: 185px;
+  margin: 0 auto 65px;
+  padding: 0;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.contest-form__symbol {
+  color: #d22856;
+}
+
+.contest-form__full-text {
+  display: none;
+}
+
+.contest-form__filter-input:focus + .contest-form__filter-item::before {
+  border: 2px solid #d22856;
+}
+
+.contest-form input + label:hover::before,
+.contest-form input:checked + label:hover::before {
+  border: 2px solid #283645;
+}
+
+.contest-form input + label:active::before,
+.contest-form input:checked ~ label:active::before {
+  border: 2px solid #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .contest-form__conditions {
+    width: 490px;
+    margin: 100px auto 0;
+    font-size: 18px;
+  }
+
+  .contest-form__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contest-form__conditions span {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .contest-form__personal-information {
+    width: 620px;
+    margin: 0 auto 63px;
+    order: -1;
+  }
+
+  .contest-form__personal-information-item {
+    display: flex;
+    margin-top: 57px;
+    margin-bottom: 0;
+  }
+
+  .contest-form__personal-information label {
+    margin: 15px 22px 14px 0;
+    padding: 0;
+  }
+
+  .contest-form__personal-information input {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contest-form__app {
+    width: 616px;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+    order: 1;
+  }
+
+  .contest-form__app-title {
+    width: 320px;
+    padding: 0 25px;
+    margin: -11px auto 15px;
+    background-color: #ffffff;
+  }
+
+  .contest-form__app-filter {
+    width: 500px;
+    margin: 38px 0 0;
+
+    &:last-child {
+      margin-bottom: 53px;
+    }
+  }
+
+  .contest-form__filter-item {
+    margin-left: 59px;
+  }
+
+  .contest-form__your-contacts {
+    position: relative;
+    width: 616px;
+    margin: 69px auto;
+    border: 2px solid #e5e5e5;
+    order: 2;
+  }
+
+  .contest-form__your-contacts-item {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 496px;
+    margin: 0 auto;
+    align-content: center;
+
+    &:last-child {
+      margin-bottom: 30px;
+    }
+  }
+
+  .contest-form__your-contacts-title {
+    display: block;
+    width: 200px;
+    padding: 0 32px;
+    margin: -11px auto 0;
+    background-color: #ffffff;
+  }
+
+  .contest-form__your-contacts-item label {
+    margin: 15px 0 0;
+    padding: 0;
+    order: 1;
+  }
+
+  .contest-form__your-contacts-item input {
+    //position: relative;
+    display: block;
+    width: 496px;
+    margin-top: 40px;
+    order: -1;
+    //padding-right: 60px;
+  }
+
+  //input[type="tel"]::before {
+  //  content: "";
+  //  position: absolute;
+  //  display: block;
+  //  width: 57px;
+  //  height: 57px;
+  //  background: #e5e5e5;
+  //
+  //  right: 0;
+  //  top: 0;
+  //}
+  //.contest-form__your-contacts input[type="tel"]::after {
+  //  content: "";
+  //  position: absolute;
+  //  display: block;
+  //  width: 20px;
+  //  height: 19px;
+  //  background: url("./../img/icon-phone.svg") no-repeat center;
+  //  background-size: 20px 19px;
+  //
+  //  right: 22px;
+  //  top: 22px;
+  //}
+  .contest-form__achievements {
+    width: 616px;
+    margin-bottom: 69px;
+    border: 2px solid #e5e5e5;
+    background-color: #ffffff;
+    order: 4;
+  }
+
+  .contest-form__achievements-filter {
+    width: 500px;
+    margin: 0 auto 43px;
+  }
+
+  .contest-form__achievements-title {
+    width: 375px;
+    margin: -11px auto 45px;
+    padding-left: 32px;
+    padding-right: 32px;
+    background-color: #ffffff;
+  }
+
+  .contest-form__emotions {
+    width: 612px;
+    margin-bottom: 69px;
+    border: 2px solid #e5e5e5;
+    order: 5;
+  }
+
+  .contest-form__emotions-form {
+    width: 612px;
+    height: 189px;
+    margin: 0 0 53px;
+  }
+
+  .contest-form__emotions-title {
+    width: 185px;
+    margin: -11px auto 0;
+    padding-left: 38px;
+    padding-right: 38px;
+    background-color: #ffffff;
+  }
+
+  .contest-form__emotions textarea {
+    display: block;
+    width: 492px;
+    height: 185px;
+    margin: 35px auto 0;
+    padding: 0;
+  }
+
+  .contest-form__send {
+    display: flex;
+    width: 620px;
+    margin: 0 auto 50px;
+    order: 6;
+  }
+
+  .contest-form__send-form {
+    width: 296px;
+    padding: 10px 30px;
+    margin: 0 141px 0 0;
+  }
+
+  .contest-form__form-note {
+    margin: 15px 0;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .contest-form {
+    width: 940px;
+    margin: 100px auto 0;
+  }
+
+  .contest-form__conditions {
+    width: 755px;
+    margin: 0 auto 64px;
+  }
+
+  .contest-form__conditions span {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .contest-form__body {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .contest-form__personal-information {
+    width: 430px;
+    margin: 10px 0 0;
+    padding-right: 70px;
+  }
+
+  .contest-form__personal-information-item:first-child {
+    margin-top: 0;
+  }
+
+  .contest-form__app {
+    width: 430px;
+    margin: 0;
+  }
+
+  .contest-form__app-filter {
+    width: 360px;
+  }
+
+  .contest-form__filter-item {
+    margin-left: 75px;
+  }
+
+  .contest-form__your-contacts {
+    padding: 0 60px;
+    width: 932px;
+  }
+
+  .contest-form__your-contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 820px;
+    margin: 40px 0 10px;
+  }
+
+  .contest-form__your-contacts-item {
+    width: 371px;
+    margin: 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .contest-form__your-contacts-item label {
+    padding-left: 20px;
+  }
+
+  .contest-form__your-contacts-item input {
+    width: 367px;
+    margin: 0;
+  }
+
+  .contest-form__achievements {
+    width: 936px;
+  }
+
+  .contest-form__achievements-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 820px;
+    margin: 0 auto 10px;
+  }
+
+  .contest-form__achievements-filter {
+    width: 260px;
+    margin: 0 0 45px 0;
+  }
+
+  .contest-form__achievements-filter label {
+    margin: 0;
+    padding-left: 60px;
+  }
+
+  .contest-form__emotions-form {
+    width: 936px;
+    height: 128px;
+    margin: 0 0 45px;
+  }
+
+  .contest-form__emotions textarea {
+    display: block;
+    width: 816px;
+    height: 124px;
+    margin: 37px auto 0;
+    padding: 0;
+  }
+
+  .contest-form__send {
+    width: 940px;
+    margin-bottom: 0;
+  }
+
+  .contest-form__send-form {
+    margin-right: 328px;
+  }
+
+  .contest-form__full-text {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .contest-form__form-note {
+    width: 315px;
+  }
+}
