@@ -118,28 +118,25 @@
         </li>
       </ul>
     </div>
-    </div>
   </section>
   <section class="research">
-    <div class="research__container container">
       <div class="research__about">
         <h3 class="research__title">Эффект на 24 часа!</h3>
         <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от
           использования приложения длится целые сутки!</p>
         <a class="research__learn" href="#">Узнать больше об исследовании</a>
       </div>
-    </div>
   </section>
   <section class="reviews">
     <div class="reviews__container container">
       <h2 class="visually-hidden">Отзывы о нас</h2>
-      <input class="visually-hidden review-1" type="radio" id="review-1" name="toggle" checked>
-      <input class="visually-hidden review-2" type="radio" id="review-2" name="toggle">
-      <input class="visually-hidden review-3" type="radio" id="review-3" name="toggle">
-      <div class="slider-controls">
-        <label class="slider-controls-item" for="review-1">Первый</label>
-        <label class="slider-controls-item" for="review-2">Второй</label>
-        <label class="slider-controls-item" for="review-3">Третий</label>
+      <input class="visually-hidden review-1" type="radio" id="review-1" name="review" checked>
+      <input class="visually-hidden review-2" type="radio" id="review-2" name="review">
+      <input class="visually-hidden review-3" type="radio" id="review-3" name="review">
+      <div class="reviews__slider-controls">
+        <label class="reviews__slider-controls-item" for="review-1">Первый</label>
+        <label class="reviews__slider-controls-item" for="review-2">Второй</label>
+        <label class="reviews__slider-controls-item" for="review-3">Третий</label>
       </div>
       <div class="slider-arrows">
         <button class="arrow-left"></button>
@@ -171,36 +168,36 @@
     <h2 class="visually-hidden">Наши цены</h2>
     <div class="price__wrapper">
       <div class="price__block">
-        <input class="visually-hidden price-1" type="radio" id="price-1" name="toggle">
-        <input class="visually-hidden price-2" type="radio" id="price-2" name="toggle" checked>
-        <input class="visually-hidden price-3" type="radio" id="price-3" name="toggle">
-        <div class="slider-controls slider-controls__price-slider">
-          <label class="slider-controls-item" for="price-1">Первый план</label>
-          <label class="slider-controls-item" for="price-2">Второй план</label>
-          <label class="slider-controls-item" for="price-3">Третий план</label>
+        <input class="visually-hidden price-1" type="radio" id="price-1" name="price">
+        <input class="visually-hidden price-2" type="radio" id="price-2" name="price" checked>
+        <input class="visually-hidden price-3" type="radio" id="price-3" name="price">
+        <div class="price__slider-controls">
+          <label class="price__slider-controls-item" for="price-1">Первый план</label>
+          <label class="price__slider-controls-item" for="price-2">Второй план</label>
+          <label class="price__slider-controls-item" for="price-3">Третий план</label>
         </div>
         <table class="price__table">
           <thead class="price__table-header">
           <tr class="price__list row--top">
-            <th class="price__title price__table-cell--left"></th>
-            <th class="price__title">База
+            <th class="price__title price__table-cell--empty"></th>
+            <th class="price__title price__column-left">База
               <p>1,99 USD</p>
             </th>
-            <th class="price__title price__title--flag">Стандарт
+            <th class="price__title price__title--flag price__column-center">Стандарт
               <p>3,99 USD</p>
             </th>
-            <th class="price__title">Анлим
+            <th class="price__title price__column-right">Анлим
               <p>9,99 USD</p>
             </th>
           </tr>
           </thead>
           <tbody class="price_table-body">
           <tr>
-            <td class="price__table-cell price__table-cell--left">Розовый фильтр</td>
-            <td class="price__table-cell price__table-cell--yes">
+            <td class="price__table-cell price__table-cell--empty">Розовый фильтр</td>
+            <td class="price__table-cell price__table-cell--yes price__column-left">
               <p class="price__table-text price__table-cell--yes">Розовый фильтр</p>
             </td>
-            <td class="price__table-cell price__table-cell--yes">
+            <td class="price__table-cell price__table-cell--yes price__column-center">
               <p class="price__table-text">Розовый фильтр</p>
             </td>
             <td class="price__table-cell price__table-cell--yes">
@@ -208,14 +205,14 @@
             </td>
           </tr>
           <tr>
-            <td class="price__table-cell price__table-cell--left">Смайлики</td>
+            <td class="price__table-cell price__table-cell--empty">Смайлики</td>
             <td class="price__table-cell price__table-cell--no">
               <p class="price__table-text">Смайлики</p>
             </td>
-            <td class="price__table-cell price__table-cell--yes">
+            <td class="price__table-cell price__table-cell--yes price__column-center">
               <p class="price__table-text">Смайлики</p>
             </td>
-            <td class="price__table-cell price__table-cell--yes">
+            <td class="price__table-cell price__table-cell--yes price__column-right">
               <p class="price__table-text">Смайлики</p>
             </td>
           </tr>
