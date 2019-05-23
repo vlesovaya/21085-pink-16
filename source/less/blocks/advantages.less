@@ -33,10 +33,15 @@
 }
 
 .advantages__wrapper::after {
-  content: '';
+  content: " ";
   display: block;
   height: 330px;
-  background: url(../img/iphone-screen-mobile@1x.png) no-repeat center 50px;
+  background: url("./../img/iphone-screen-mobile@1x.png") no-repeat center 50px;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("./../img/iphone-screen-mobile@2x.png");
+    background-size: contain;
+  }
 }
 
 .advantages__item {
