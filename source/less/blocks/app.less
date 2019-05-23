@@ -5,6 +5,16 @@
   background-image: url("./../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("./../img/bg-back-tablet@2x.jpg");
+    background-size: auto 465px;
+  }
+}
+
+.app__container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .app__promo {
@@ -59,11 +69,13 @@
   position: relative;
   margin: 0 auto;
   width: 320px;
-  height: 462px;
+  height: 465px;
 }
 
 .app__image--hand {
   position: absolute;
+  width: auto;
+  height: 290px;
   bottom: 0;
   left: 0;
 }
@@ -113,6 +125,7 @@
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("./../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
     }
   }
 
@@ -124,9 +137,9 @@
   }
 
   .app__image--hand {
-    width: 470px;
+    width: auto;
     height: 545px;
-    left: 150px;
+    right: 20px;
     bottom: 0;
   }
 
@@ -171,6 +184,11 @@
   .app {
     min-height: 853px;
     background-image: url("./../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("./../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .app__container {
@@ -183,9 +201,9 @@
   }
 
   .app__image--hand {
-    width: 560px;
+    width: auto;
     height: 645px;
-    left: 350px;
+    left: 20px;
     bottom: 0;
   }
 

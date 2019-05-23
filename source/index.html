@@ -64,7 +64,11 @@
     <div class="app__container container">
       <h2 class="visually-hidden">Скачать приложение</h2>
       <div class="app__image">
-        <img class="app__image--hand" src="./img/iphone-hand-mobile@1x.png" alt="Изображение приложения" width="258" height="288">
+        <picture>
+          <source media="(min-width:960px)" srcset="img/iphone-hand-desktop@1x.png, img/iphone-hand-desktop@2x.png">
+          <source media="(min-width: 660px)" srcset="img/iphone-hand-tablet@1x.png, img/iphone-hand-tablet@2x.png">
+          <img class="app__image--hand" src="./img/iphone-hand-mobile@1x.png" alt="Изображение приложения">
+        </picture>
       </div>
       <div class="app__promo">
         <p class="app__slogan">Взгляните на жизнь иначе!</p>
