@@ -110,6 +110,10 @@
   .app {
     min-height: 730px;
     background-image: url("./../img/bg-back-tablet@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("./../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .app__image {
