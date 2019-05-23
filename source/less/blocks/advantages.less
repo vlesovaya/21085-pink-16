@@ -32,6 +32,13 @@
   background-position: 50% 0;
 }
 
+.advantages__wrapper::after {
+  content: '';
+  display: block;
+  height: 330px;
+  background: url(../img/iphone-screen-mobile@1x.png) no-repeat center 50px;
+}
+
 .advantages__item {
   display: block;
   width: 255px;
@@ -40,6 +47,10 @@
 
   &:first-child {
     margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -69,7 +80,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .advantages {
+  .advantages__wrapper::after {
+    display: none;
   }
 
   .advantages__promo {
