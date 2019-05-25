@@ -78,28 +78,38 @@
 
   .contacts__slogan {
     width: 370px;
-    margin: 56px auto 57px;
+    margin: 45px auto 45px;
     font-size: 40px;
-    line-height: 45px;
+    line-height: 50px;
   }
 
   .contacts__list {
+    width: 620px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    width: 545px;
+    justify-content: space-around;
+    margin-bottom: 10px;
   }
 
   .contacts__item {
     margin: 0;
+
+    &--phone {
+      width: 210px;
+    }
+
+    &--email {
+      width: 240px;
+    }
   }
 
   .contacts__item--address {
-    margin: 52px auto 20px;
+    width: 215px;
+    margin: 45px auto 20px;
   }
 
   .contacts__map-content {
-    height: 520px;
+    height: 370px;
     background: url("./../img/bg-map-tablet@1x.jpg") no-repeat 50% 80%;
   }
 
