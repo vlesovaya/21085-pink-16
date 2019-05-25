@@ -40,6 +40,10 @@
   color: #d22856;
 }
 
+.contacts__email {
+  text-decoration: none;
+}
+
 .contacts__map {
   position: relative;
   margin: 0 auto;
@@ -161,6 +165,21 @@
   .contacts__item--email {
     text-align: center;
     order: 1;
+  }
+
+  .contacts__email {
+    cursor: default;
+    text-decoration: none;
+  }
+
+  .contacts__email:hover {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  .contacts__email:focus {
+    opacity: 0.3;
+    text-decoration: none;
   }
 
   .contacts__map-content {
