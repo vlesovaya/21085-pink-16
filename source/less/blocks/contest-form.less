@@ -500,7 +500,8 @@
 
   .contest-form__achievements {
     width: 620px;
-    margin-bottom: 69px;
+    margin-bottom: 65px;
+    padding-bottom: 10px;
     border: 2px solid #e5e5e5;
     background-color: #ffffff;
     box-sizing: border-box;
@@ -510,10 +511,6 @@
   .contest-form__achievements-filter {
     width: 500px;
     margin: 0 auto 43px;
-
-    &:last-child {
-      margin-bottom: 50px;
-    }
   }
 
   .contest-form__achievements-title {
@@ -571,7 +568,7 @@
   .contest-form__send-form {
     width: 300px;
     padding: 10px 30px;
-    margin: 0 141px 0 0;
+    margin: 0 140px 0 0;
   }
 
   .contest-form__form-note {
@@ -583,11 +580,11 @@
 @media (min-width: @desktop-width) {
   .contest-form {
     width: 940px;
-    margin: 100px auto 0;
+    margin: 92px auto 0;
   }
 
   .contest-form__conditions {
-    width: 755px;
+    width: 760px;
     margin: 0 auto 64px;
   }
 
@@ -602,8 +599,8 @@
   }
 
   .contest-form__personal-information {
-    width: 430px;
-    margin: 10px 0 0;
+    width: 435px;
+    margin: 20px 0 0;
     padding-right: 70px;
   }
 
@@ -612,8 +609,8 @@
   }
 
   .contest-form__app {
-    width: 430px;
-    margin: 0;
+    width: 433px;
+    margin-top: 12px;
   }
 
   .contest-form__app-filter {
@@ -621,12 +618,12 @@
   }
 
   .contest-form__filter-item {
-    margin-left: 75px;
+    margin-left: 15px;
   }
 
   .contest-form__your-contacts {
-    padding: 0 60px;
-    width: 932px;
+    padding: 0 57px;
+    width: 940px;
   }
 
   .contest-form__your-contacts-list {
@@ -634,7 +631,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 820px;
-    margin: 40px 0 10px;
+    margin: 35px 0 10px;
   }
 
   .contest-form__your-contacts-item {
@@ -647,13 +644,14 @@
   }
 
   .contest-form__your-contacts-item label {
+    margin-top: 10px;
     padding-left: 20px;
   }
 
   .contest-form__your-contacts-item input {
-    width: 367px;
-    //box-sizing: border-box;
+    width: 371px;
     margin: 0;
+    box-sizing: border-box;
   }
 
   .contest-form__your-contacts-item::before {
@@ -667,7 +665,8 @@
   }
 
   .contest-form__achievements {
-    width: 936px;
+    width: 940px;
+    margin-bottom: 60px;
   }
 
   .contest-form__achievements-list {
@@ -676,12 +675,20 @@
     justify-content: space-between;
     flex-direction: row;
     width: 820px;
-    margin: 0 auto 10px;
+    margin: 0 auto 55px;
   }
 
   .contest-form__achievements-filter {
-    width: 260px;
-    margin: 0 0 45px 0;
+    width: auto;
+    margin-bottom: 45px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .contest-form__achievements-column {
+    max-width: 260px;
   }
 
   .contest-form__achievements-filter label {
@@ -692,14 +699,14 @@
   .contest-form__emotions-form {
     width: 936px;
     height: 128px;
-    margin: 0 0 45px;
+    margin: 0 0 40px;
   }
 
   .contest-form__emotions textarea {
     display: block;
-    width: 816px;
-    height: 124px;
-    margin: 37px auto 0;
+    width: 820px;
+    height: 128px;
+    margin: 30px auto 0;
     padding: 0;
   }
 
@@ -718,6 +725,6 @@
   }
 
   .contest-form__form-note {
-    width: 315px;
+    width: 320px;
   }
 }
