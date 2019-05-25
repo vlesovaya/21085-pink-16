@@ -9,11 +9,6 @@
   width: 100%;
 }
 
-.user-photo--image-day {
-  width: 100%;
-  height: auto;
-}
-
 .user-photo__caption {
   display: flex;
   flex-direction: column;
@@ -38,10 +33,11 @@
 }
 
 .user-photo__content {
-  margin: 0 0 7px 0;
+  margin: 0 0 10px 0;
 }
 
 .user-photo__like {
+  padding-left: 30px;
   font-size: 12px;
   color: @red;
   text-decoration: none;
@@ -49,7 +45,7 @@
   width: 240px;
   background-image: url("./../img/icon-heart.svg");
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: left center;
 }
 
 .user-photo__flag {
@@ -76,6 +72,12 @@
 
   .user-photo--top {
     width: 100%;
+    margin-bottom: 52px;
+  }
+
+  .user-photo--image-day {
+    width: 100%;
+    height: 510px;
   }
 
   .user-photo__image {
@@ -84,8 +86,8 @@
   }
 
   .user-photo__caption {
-    height: 110px;
-    padding: 20px 30px 20px 30px;
+    min-height: 110px;
+    padding: 28px 30px 20px 29px;
     margin-bottom: 0;
   }
 
@@ -95,6 +97,8 @@
 
   .user-photo__like {
     margin-top: auto;
+    padding-left: 0;
+    background-position: right center;
   }
 
   .user-photo__caption--image-day {
@@ -102,13 +106,14 @@
     flex-wrap: wrap;
     flex-direction: row;
     width: 565px;
-    height: auto;
-    padding: 31px 29px 8px 27px;
+    min-height: 50px;
+    //height: auto;
+    padding: 31px 29px 10px 27px;
   }
 
   .user-photo__post-info--image-day {
     width: 140px;
-    margin-right: 300px;
+    margin-right: 305px;
     order: -2;
   }
 
@@ -129,8 +134,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .user-photo--top {
-    width: 100%;
+  .user-photo {
+    margin-bottom: 55px;
+
+    &--top {
+      width: 100%;
+      margin-bottom: 50px;
+    }
   }
 
   .user-photo--image-day {
@@ -143,7 +153,7 @@
 
   .user-photo__caption--image-day {
     width: 881px;
-    padding: 30px 32px 20px 27px;
+    padding: 28px 32px 22px 27px;
   }
 
   .user-photo__image {
@@ -151,7 +161,7 @@
   }
 
   .user-photo__post-info--image-day {
-    margin-right: 605px;
+    margin-right: 620px;
   }
 
   .user-photo__content--image-day {

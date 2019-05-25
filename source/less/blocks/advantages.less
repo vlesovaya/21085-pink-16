@@ -5,7 +5,7 @@
 .advantages__promo {
   display: block;
   width: 205px;
-  margin: 45px auto 30px;
+  margin: 43px auto 40px;
   font-size: 24px;
   line-height: 25px;
   font-weight: 300;
@@ -14,7 +14,7 @@
 
 .advantages__promo--question {
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .advantages__list {
@@ -35,8 +35,8 @@
 .advantages__wrapper::after {
   content: " ";
   display: block;
-  height: 330px;
-  background: url("./../img/iphone-screen-mobile@1x.png") no-repeat center 50px;
+  height: 320px;
+  background: url("./../img/iphone-screen-mobile@1x.png") no-repeat center 40px;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("./../img/iphone-screen-mobile@2x.png");
@@ -47,7 +47,7 @@
 .advantages__item {
   display: block;
   width: 255px;
-  margin: 40px auto;
+  margin: 35px auto 0;
   text-align: center;
 
   &:first-child {
@@ -72,12 +72,13 @@
 }
 
 .advantages__title {
-  margin-top: 0;
-  margin-bottom: 15px;
+  width: 240px;
+  margin: 0 auto 15px;
   font-size: 18px;
   line-height: 1;
   font-weight: 700;
   color: #000000;
+  overflow-wrap: break-word;
 }
 
 .advantages__description {
@@ -91,7 +92,7 @@
 
   .advantages__promo {
     width: 620px;
-    margin: 59px auto 22px;
+    margin: 50px auto 22px;
     font-size: 40px;
     line-height: 45px;
   }
@@ -115,7 +116,7 @@
     position: relative;
     width: 310px;
     margin: 0 auto;
-    padding-top: 75px;
+    padding-top: 80px;
     padding-left: 310px;
     padding-bottom: 45px;
     background-image: url("./../img/iphone-screen-3-tablet@1x.png");
@@ -125,12 +126,16 @@
 
   .advantages__item {
     width: 308px;
-    margin: 0 0 42px 0;
+    margin: 0 0 37px 0;
     text-align: left;
   }
 
   .advantages__item:last-child {
     margin-bottom: 0;
+  }
+
+  .advantages__title {
+    margin-left: 0;
   }
 
   .advantages__image {
@@ -146,13 +151,17 @@
 
   .advantages__promo {
     width: 750px;
-    margin: 70px auto;
+    margin: 70px auto 75px;
     font-size: 50px;
     line-height: 60px;
   }
 
   .advantages__promo--answer {
     width: 420px;
+  }
+
+  .advantages__wrapper {
+    margin-top: 0;
   }
 
   .advantages__list {
@@ -182,12 +191,12 @@
 
   .advantages__image--desktop {
     display: block;
-    margin: 0 -30px;
+    margin: 0 -25px;
   }
 
   .advantages__title {
-    margin-top: 60px;
-    margin-bottom: 20px;
+    margin-top: 55px;
+    margin-bottom: 25px;
     font-size: 30px;
     line-height: 1;
   }

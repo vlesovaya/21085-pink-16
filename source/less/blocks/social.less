@@ -1,10 +1,18 @@
 .social__list {
   display: flex;
   justify-content: space-between;
-  width: 180px;
+  width: 177px;
   margin: 0 auto;
   padding: 0;
   list-style: none;
+}
+
+.social__item {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link {
@@ -30,4 +38,20 @@
 
 .social__link--youtube svg {
   padding-left: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .social__list {
+    margin-top: 5px;
+    margin-left: 75px;
+    margin-right: 93px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__list {
+    margin-top: 5px;
+    margin-left: 240px;
+    margin-right: 225px;
+  }
 }

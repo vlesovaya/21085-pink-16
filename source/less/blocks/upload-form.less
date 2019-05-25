@@ -1,6 +1,10 @@
+.upload-form {
+  margin-bottom: 40px;
+}
+
 .upload-form__slogan {
   width: 255px;
-  margin: 50px auto 48px;
+  margin: 43px auto 40px;
   line-height: 30px;
   text-align: center;
 }
@@ -26,9 +30,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 42px auto 40px;
+  margin: 35px auto 30px;
   align-items: center;
-  width: 200px;
+  width: 215px;
 }
 
 .upload-form__filter-tools input {
@@ -71,7 +75,7 @@
 }
 
 .range-controls__bar {
-  width: 240px;
+  width: 238px;
   height: 2px;
   background: #283645;
 }
@@ -79,7 +83,7 @@
 .range-controls__toggle {
   position: absolute;
   top: -6px;
-  left: 197px;
+  left: 190px;
 
   width: 10px;
   height: 10px;
@@ -127,9 +131,13 @@
 }
 
 @media (min-width: @tablet-width) {
+  .upload-form {
+    margin-bottom: 33px;
+  }
+
   .upload-form__slogan {
     width: 422px;
-    margin: 54px auto 72px;
+    margin: 45px auto 68px;
     font-size: 18px;
   }
 
@@ -139,7 +147,7 @@
   }
 
   .upload-form__image-select {
-    padding: 57px 48px 54px 20px;
+    padding: 57px 48px 40px 20px;
   }
 
   .upload-form__range-controls {
@@ -173,6 +181,8 @@
     display: block;
     width: 24px;
     height: 24px;
+    fill: #d22856;
+    opacity: 1;
   }
 
   .upload-form__filter-image--1 {
@@ -182,14 +192,14 @@
   }
 
   .upload-form__filter-image--2 {
-    padding-top: 25px;
-    padding-bottom: 23px;
+    padding-top: 28px;
+    padding-bottom: 20px;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
   }
 
   .upload-form__filter-image--3 {
-    padding-top: 25px;
-    padding-bottom: 23px;
+    padding-top: 23px;
+    padding-bottom: 25px;
     border-bottom: 1px solid rgba(40, 54, 69, 0.1);
   }
 
@@ -223,20 +233,20 @@
   }
 
   .range-controls__filter--1 .range-controls__toggle {
-    left: 160px;
+    left: 173px;
   }
 
   .range-controls__filter--2 .range-controls__toggle {
-    left: 50px;
+    left: 52px;
   }
 
   .range-controls__filter--3 .range-controls__toggle {
-    left: 115px;
+    left: 125px;
   }
 
   .upload-form__button {
     width: 260px;
-    margin: 67px 0 0;
+    margin: 65px 0 0;
   }
 
   .upload-form__submit-photo,
@@ -246,6 +256,7 @@
 
   .upload-form__submit-photo {
     margin-top: 0;
+    margin-bottom: 25px;
   }
 
   .upload-form__reset-photo {
@@ -254,8 +265,17 @@
 }
 
 @media (min-width: @desktop-width) {
+  .upload-form {
+    margin-bottom: 95px;
+  }
+
   .upload-form__content {
     width: 940px;
+  }
+
+  .upload-form__slogan {
+    margin-top: 5px;
+    margin-bottom: 65px;
   }
 
   .upload-form__image-select {
@@ -317,6 +337,18 @@
   .range-controls__bar {
     width: 288px;
     margin: 0 0 34px;
+  }
+
+  .range-controls__filter--1 .range-controls__toggle {
+    left: 115px;
+  }
+
+  .range-controls__filter--2 .range-controls__toggle {
+    left: 290px;
+  }
+
+  .range-controls__filter--3 .range-controls__toggle {
+    left: 205px;
   }
 
   .upload-form__button {

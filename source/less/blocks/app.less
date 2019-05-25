@@ -5,6 +5,16 @@
   background-image: url("./../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center 0;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("./../img/bg-back-tablet@2x.jpg");
+    background-size: auto 395px;
+  }
+}
+
+.app__container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .app__promo {
@@ -25,7 +35,7 @@
   display: block;
   text-align: center;
   width: 275px;
-  margin: 0 auto 32px;
+  margin: 0 auto 30px;
   padding: 17px 0;
   font-size: 18px;
   line-height: 1;
@@ -50,7 +60,7 @@
   display: flex;
   justify-content: center;
   margin: 0 auto;
-  margin-bottom: 28px;
+  margin-bottom: 15px;
   padding: 0;
   list-style: none;
 }
@@ -59,11 +69,13 @@
   position: relative;
   margin: 0 auto;
   width: 320px;
-  height: 462px;
+  height: 395px;
 }
 
 .app__image--hand {
   position: absolute;
+  width: auto;
+  height: 290px;
   bottom: 0;
   left: 0;
 }
@@ -101,32 +113,32 @@
   display: block;
   width: 230px;
   margin: 0 auto;
-  padding-bottom: 35px;
+  padding-bottom: 30px;
   text-align: center;
   font-weight: 300;
 }
 
 @media (min-width: @tablet-width) {
   .app {
-    min-height: 730px;
     background-image: url("./../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("./../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
     }
   }
 
   .app__image {
     position: relative;
-    width: 660px;
-    height: 730px;
+    width: 620px;
+    height: 620px;
     z-index: 2;
   }
 
   .app__image--hand {
-    width: 470px;
+    width: auto;
     height: 545px;
-    left: 150px;
+    left: -40px;
     bottom: 0;
   }
 
@@ -139,15 +151,16 @@
 
   .app__promo {
     position: absolute;
-    padding: 0;
+    padding-top: 60px;
     left: 0;
-    bottom: 109px;
+    bottom: 100px;
     z-index: 10;
   }
 
   .app__slogan {
     display: block;
-    margin-bottom: 39px;
+    line-height: 50px;
+    margin-bottom: 25px;
   }
 
   .app__download-link {
@@ -156,21 +169,28 @@
   }
 
   .app__app-logo {
-    margin-bottom: 41px;
+    margin-bottom: 30px;
   }
 
   .app__available {
-    width: 300px;
+    width: 220px;
     font-size: 18px;
     line-height: 24px;
     padding: 0;
+    margin-bottom: 10px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .app {
-    min-height: 853px;
+    padding-top: 220px;
+    padding-bottom: 110px;
     background-image: url("./../img/bg-back-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("./../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .app__container {
@@ -178,37 +198,45 @@
   }
 
   .app__image {
+    position: absolute;
     width: 940px;
-    height: 853px;
-  }
-
-  .app__image--hand {
-    width: 560px;
-    height: 645px;
-    left: 350px;
     bottom: 0;
   }
 
+  .app__image--hand {
+    width: auto;
+    height: 645px;
+    left: 20px;
+    bottom: -110px;
+  }
+
   .app__promo {
+    position: relative;
+    padding: 0;
     left: 0;
-    bottom: 125px;
+    bottom: 12px;
   }
 
   .app__slogan {
     width: 235px;
-    //margin-bottom: 61px;
+    margin: 10px 30px 20px;
     font-size: 50px;
     line-height: 60px;
   }
 
   .app__download-link {
-    margin-top: 50px;
-    margin-bottom: 67px;
+    margin: 50px 0 65px;
     font-size: 21px;
     line-height: 18px;
   }
 
   .app__app-logo {
-    margin-bottom: 45px;
+    width: 220px;
+    margin: 0 40px 45px;
+  }
+
+  .app__available {
+    width: 300px;
+    margin: 0;
   }
 }
