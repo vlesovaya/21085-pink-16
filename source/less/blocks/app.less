@@ -120,7 +120,6 @@
 
 @media (min-width: @tablet-width) {
   .app {
-    min-height: 620px;
     background-image: url("./../img/bg-back-tablet@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -174,7 +173,7 @@
   }
 
   .app__available {
-    width: 300px;
+    width: 220px;
     font-size: 18px;
     line-height: 24px;
     padding: 0;
@@ -184,7 +183,8 @@
 
 @media (min-width: @desktop-width) {
   .app {
-    min-height: 853px;
+    padding-top: 220px;
+    padding-bottom: 110px;
     background-image: url("./../img/bg-back-desktop@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
@@ -198,37 +198,45 @@
   }
 
   .app__image {
+    position: absolute;
     width: 940px;
-    height: 853px;
+    bottom: 0;
   }
 
   .app__image--hand {
     width: auto;
     height: 645px;
     left: 20px;
-    bottom: 0;
+    bottom: -110px;
   }
 
   .app__promo {
+    position: relative;
+    padding: 0;
     left: 0;
-    bottom: 125px;
+    bottom: 12px;
   }
 
   .app__slogan {
     width: 235px;
-    //margin-bottom: 61px;
+    margin: 10px 30px 20px;
     font-size: 50px;
     line-height: 60px;
   }
 
   .app__download-link {
-    margin-top: 50px;
-    margin-bottom: 67px;
+    margin: 50px 0 65px;
     font-size: 21px;
     line-height: 18px;
   }
 
   .app__app-logo {
-    margin-bottom: 45px;
+    width: 220px;
+    margin: 0 40px 45px;
+  }
+
+  .app__available {
+    width: 300px;
+    margin: 0;
   }
 }

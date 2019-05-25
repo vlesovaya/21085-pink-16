@@ -136,16 +136,25 @@
 @media (min-width: @desktop-width) {
   .reviews {
     margin-top: 72px;
+    margin-bottom: 20px;
   }
 
   .reviews__list {
     width: 960px;
     margin: 0 auto;
-    padding-top: 115px;
+    padding-top: 110px;
     padding-bottom: 0;
     background-image: url("./../img/icon-quotes.svg");
     background-repeat: no-repeat;
     background-position: top center;
+  }
+
+  .reviews__author-name {
+    font-size: 24px;
+  }
+
+  .reviews__about-author {
+    font-size: 18px;
   }
 
   .review-1:checked ~ .reviews__list .reviews__item--1,
@@ -169,7 +178,11 @@
     background-color: transparent;
     opacity: 0.3;
     border: none;
-    cursor: pointer;
+    cursor: default;
+  }
+
+  .slider-arrows button:hover {
+    background-color: #283645;
   }
 
   .arrow-left {
