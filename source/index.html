@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <title>HTML Academy: Пинк</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
 </head>
 <body>
 <svg style="display:none">
@@ -254,7 +256,7 @@
         </li>
         <li class="contacts__item contacts__item--email">
           <p class="contacts__title">Пишите:</p>
-          <span class="contacts__email">mail@htmlacademy.ru</span>
+          <a class="contacts__email" href="#">mail@htmlacademy.ru</a>
         </li>
         <li class="contacts__item contacts__item--address">
           <p class="contacts__title">Приезжайте в гости:</p>
