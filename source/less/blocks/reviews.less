@@ -85,6 +85,18 @@
   display: block;
 }
 
+.reviews input + label:hover {
+  opacity: 0.6;
+}
+
+.reviews__filter-input:focus + .reviews__slider-controls-item {
+  opacity: 0.1;
+}
+
+.reviews__slider-controls-item:active {
+  opacity: 0.1;
+}
+
 @media (min-width: @tablet-width) {
   .reviews {
     margin-top: 0;
